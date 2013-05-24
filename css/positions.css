@@ -126,11 +126,15 @@
 	padding:3px;
 }
 #content #colorCodesContainer {
-	position:absolute;
-	left:20px;
-	bottom:55px;
-	padding:3px;
-	z-index:1;
+    bottom: -117px;
+    height: 127px;
+    left: 924px;
+    padding: 3px;
+    position: absolute;
+    width: 132px;
+    z-index: 1;
+	
+	
 }
 #content #emoticonsContainer {
 	position:absolute;
