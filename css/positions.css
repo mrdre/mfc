@@ -94,9 +94,14 @@
 	padding-right:4px;
 }
 #content #submitButtonContainer {
+	
+	
 	position: absolute;
-	right: 122px;
-	bottom: 11px;
+right: 122px;
+bottom: 2px;
+width: 59px;
+text-align: center;
+font-size: 8px;
 
 }
 
@@ -268,11 +273,18 @@ padding: 10px 1px 2px 6px;
 
 #audioButton
 {
+	
+}
+
+
+
+
+.pos_sound
+{
 	position: relative;
 	top: 20px;
 	left: 20px;
 }
-
 
 
 
@@ -348,8 +360,11 @@ padding: 10px 1px 2px 6px;
 	padding-left:5px;
 }
 #content #inputFieldContainer #inputField {
-	width:69%;
+	width: 75%;
 	height:40px;
+	
+	
+	
 }
 #content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
 	height:30px;
