@@ -94,10 +94,23 @@
 	padding-right:4px;
 }
 #content #submitButtonContainer {
-	position:absolute;
-	right:20px;
-	bottom:60px;
+	position: absolute;
+	right: 122px;
+	bottom: 11px;
+
 }
+
+.bth_sendmsg {
+	background: url('../img/send_mes.png') no-repeat;
+	width: 56px;
+	height: 22px;
+	border: none;
+}
+
+.bth_sendmsg:hover {
+	background: url('../img/send_mes_a.png') no-repeat;
+}
+
 #content #onlineListContainer {
 	position:absolute;
 	right:20px;
@@ -120,31 +133,161 @@
 	bottom:150px;
 }
 #content #bbCodeContainer {
-	position:absolute;
-	right:20px;
-	bottom:20px;
-	padding:3px;
+	position: absolute;
+right: 11px;
+bottom: 7px;
+padding: 3px;
+border: none!important;
 }
 #content #colorCodesContainer {
-    bottom: -117px;
-    height: 127px;
-    left: 924px;
-    padding: 3px;
-    position: absolute;
-    width: 132px;
-    z-index: 1;
 	
-	
+
+top: 40px;
+right: 13px;
+position: absolute;
+background: url('../img/color_back.png') no-repeat;
+width: 71px;
+height: 72px;
+border: none!important;
+z-index: 1;
+padding: 11px 1px 1px 7px;
 }
+
+#content #textStyleContainer
+{
+top: 26px;
+left: 468px;
+padding: 3px;
+position: absolute;
+background: url('../img/text_back.png') no-repeat;
+width: 90px;
+height: 64px;
+z-index: 1;
+padding: 10px 1px 2px 6px;
+
+}
+
+.bth_textStyleContainer
+{
+	position: relative;
+	top: -20px;
+	left: -58px;
+	background: url('../img/text_options.png') no-repeat;
+	width: 14px;
+	height: 13px;
+	border: none;
+}
+
+.underline
+{
+	background: url('../img/text_underline.png') no-repeat;
+	width: 26px;
+	height: 23px;
+	border: none;
+	float: left;
+}
+
+.underline:hover
+{
+	background: url('../img/text_underline_a.png') no-repeat;
+	width: 26px;
+	height: 23px;
+}
+
+.bold
+{
+	background: url('../img/text_bold.png') no-repeat;
+	width: 26px;
+	height: 23px;
+	border: none;
+	float: left;
+}
+
+.bold:hover
+{
+	background: url('../img/text_bold_a.png') no-repeat;
+	width: 26px;
+	height: 23px;
+}
+
+.italic
+{
+	background: url('../img/text_italic.png') no-repeat;
+	width: 26px;
+	height: 23px;
+	border: none;
+	float: left;
+}
+
+.italic:hover
+{
+	background: url('../img/text_italic_a.png') no-repeat;
+	width: 26px;
+	height: 23px;
+}
+
+.bth_color
+{
+	background: url('../img/color.png') no-repeat;
+	width: 31px;
+	height: 24px;
+	border: none;
+}
+
+.bth_color:hover
+{
+	background: url('../img/color_a.png') no-repeat;
+}
+
+.bth_picture
+{
+	background: url('../img/picture.png') no-repeat;
+	width: 31px;
+	height: 24px;
+	border: none;
+}
+
+.bth_picture:hover
+{
+	background: url('../img/picture_a.png') no-repeat;
+}
+
+.bth_smiles
+{
+	background: url('../img/smile.png') no-repeat;
+	width: 31px;
+	height: 24px;
+	border: none;
+}
+
+.bth_smiles:hover
+{
+	background: url('../img/smile_a.png') no-repeat;
+}
+
+
+#audioButton
+{
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+
+
+
+
 #content #emoticonsContainer {
 	position:absolute;
 	right:20px;
-	bottom:57px;
+	//bottom:57px;
+	top: 51px;
 	padding:3px;
 }
 #content #optionsContainer {
 	position:absolute;
-	top:20px;
+	//top:20px;
+	top:100px;
 	right:20px;
 	padding:3px;
 	padding-right:0px;
@@ -156,8 +299,8 @@
 #content #colorCodesContainer a {
 	display:block;
 	float:left;
-	width:20px;
-	height:20px;
+	width: 10px;
+	height: 10px;
 }
 #content #optionsContainer input {
     vertical-align:middle;

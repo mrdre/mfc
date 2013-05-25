@@ -46,7 +46,7 @@
 	}
 	
 	#content {
-		background-color:#F9F9F9;
+		//background-color:#F9F9F9;
 		color:#28313F;
 	}
 	#content h1 {
@@ -61,7 +61,7 @@
 	}
 	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #bbCodeContainer, #content #colorCodesContainer, #content #emoticonsContainer {
 		border-color:#105289;
-		background-color:#FFF;
+		//background-color:#FFF;
 	}
 	.statusContainerOn {
 		background-image: url('../img/loading.png');

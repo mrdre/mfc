@@ -419,11 +419,58 @@
 			</div>
 			
 		</div>
+		
+		
+		<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
+		
+		
+		
 		<div id="chatList" ></div>
 
 		<div id="inputFieldContainer">
 			<textarea id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></textarea>
+			<input class="bth_textStyleContainer" type="button" value="" title="textstyle" onclick="ajaxChat.showHide('textStyleContainer', null);"/>
+			
+			<div id="submitButtonContainer">
+			<span id="messageLengthCounter">0/[MESSAGE_TEXT_MAX_LENGTH/]</span>
+			<input type="button" id="submitButton" value="" onclick="ajaxChat.sendMessage();" class="bth_sendmsg"/>
+			</div>
+			
+			
+			<div id="bbCodeContainer">
+			<!--
+				<input type="button" value="[LANG]bbCodeLabelQuote[/LANG]" title="[LANG]bbCodeTitleQuote[/LANG]" onclick="ajaxChat.insertBBCode('quote');"/>
+				<input type="button" value="[LANG]bbCodeLabelCode[/LANG]" title="[LANG]bbCodeTitleCode[/LANG]" onclick="ajaxChat.insertBBCode('code');"/>
+				<input type="button" value="[LANG]bbCodeLabelURL[/LANG]" title="[LANG]bbCodeTitleURL[/LANG]" onclick="ajaxChat.insertBBCode('url');"/>
+				-->
+				
+				
+				<input type="button" title="smiles" onclick="ajaxChat.showHide('emoticonsContainer', null);" class="bth_smiles"/>
+				
+				<input type="button" title="[LANG]bbCodeTitleImg[/LANG]" onclick="ajaxChat.insertBBCode('img');" class="bth_picture"/>
+				<input type="button" title="[LANG]bbCodeTitleColor[/LANG]" onclick="ajaxChat.showHide('colorCodesContainer', null);" class="bth_color"/>
+			</div>
+		
+		<div id="emoticonsContainer" style="display:none;" dir="ltr"></div>
+		<div id="textStyleContainer" style="display:none;">
+			<input type="button" title="[LANG]bbCodeTitleBold[/LANG]" onclick="ajaxChat.insertBBCode('b');" class="bold"/>
+			<input type="button" title="[LANG]bbCodeTitleItalic[/LANG]" onclick="ajaxChat.insertBBCode('i');" class="italic"/>
+			<input type="button" title="[LANG]bbCodeTitleUnderline[/LANG]" onclick="ajaxChat.insertBBCode('u');" class="underline"/>
 		</div>
+		
+		<div id="colorCodesContainer" style="display:none;" dir="ltr"></div>
+		<div id="optionsContainer">
+			<input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/>
+			<input type="image" src="img/pixel.gif" class="button" id="settingsButton" alt="[LANG]toggleSettings[/LANG]" title="[LANG]toggleSettings[/LANG]" onclick="toggleContainer('settingsContainer', new Array('onlineListContainer','helpContainer'));"/>
+			<input type="image" src="img/pixel.gif" class="button" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
+			<!--
+			<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
+			-->
+			<input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/>
+  		</div>
+		
+		</div>
+		
 		<div id="logoutChannelContainer">
   			<input type="button" id="logoutButton" value="[LANG]logout[/LANG]" onclick="ajaxChat.logout();"/>
 			<!--label for="channelSelection">[LANG]channel[/LANG]:</label-->
@@ -435,33 +482,9 @@
 
 			<!--textarea disabled="true" id="currenttips" rows="1" cols="5" >[SHOW_CURRENT_COINS/]</textarea-->
   		</div>
-		<div id="submitButtonContainer">
-			<span id="messageLengthCounter">0/[MESSAGE_TEXT_MAX_LENGTH/]</span>
-			<input type="button" id="submitButton" value="[LANG]messageSubmit[/LANG]" onclick="ajaxChat.sendMessage();"/>
-		</div>
-		<div id="emoticonsContainer" dir="ltr"></div>
-		<div id="textStyleContainer">
-			<input type="button" value="[LANG]bbCodeLabelBold[/LANG]" title="[LANG]bbCodeTitleBold[/LANG]" onclick="ajaxChat.insertBBCode('b');" style="font-weight:bold;"/>
-			<input type="button" value="[LANG]bbCodeLabelItalic[/LANG]" title="[LANG]bbCodeTitleItalic[/LANG]" onclick="ajaxChat.insertBBCode('i');" style="font-style:italic;"/>
-			<input type="button" value="[LANG]bbCodeLabelUnderline[/LANG]" title="[LANG]bbCodeTitleUnderline[/LANG]" onclick="ajaxChat.insertBBCode('u');" style="text-decoration:underline;"/>
-		</div>
-		<div id="bbCodeContainer">
-			<input type="button" value="[LANG]bbCodeLabelQuote[/LANG]" title="[LANG]bbCodeTitleQuote[/LANG]" onclick="ajaxChat.insertBBCode('quote');"/>
-			<input type="button" value="[LANG]bbCodeLabelCode[/LANG]" title="[LANG]bbCodeTitleCode[/LANG]" onclick="ajaxChat.insertBBCode('code');"/>
-			<input type="button" value="[LANG]bbCodeLabelURL[/LANG]" title="[LANG]bbCodeTitleURL[/LANG]" onclick="ajaxChat.insertBBCode('url');"/>
-			<input type="button" value="[LANG]bbCodeLabelImg[/LANG]" title="[LANG]bbCodeTitleImg[/LANG]" onclick="ajaxChat.insertBBCode('img');"/>
-			<input type="button" value="[LANG]bbCodeLabelColor[/LANG]" title="[LANG]bbCodeTitleColor[/LANG]" onclick="ajaxChat.showHide('colorCodesContainer', null);"/>
-			<input type="button" value="textstyle" title="textstyle" onclick="ajaxChat.showHide('textStyleContainer', null);"/>
-			<input type="button" value="smiles" title="smiles" onclick="ajaxChat.showHide('emoticonsContainer', null);"/>
-		</div>
-		<div id="colorCodesContainer" style="display:none;" dir="ltr"></div>
-		<div id="optionsContainer">
-			<input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/>
-			<input type="image" src="img/pixel.gif" class="button" id="settingsButton" alt="[LANG]toggleSettings[/LANG]" title="[LANG]toggleSettings[/LANG]" onclick="toggleContainer('settingsContainer', new Array('onlineListContainer','helpContainer'));"/>
-			<input type="image" src="img/pixel.gif" class="button" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
-			<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
-			<input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/>
-  		</div>
+		
+		
+		
 		<div id="onlineListContainer">
 			<h3>[LANG]onlineUsers[/LANG]</h3>
 			<div id="pv_msg_spoiler_div" class="spoiler" style="display:none;">
