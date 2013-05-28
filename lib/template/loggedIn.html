@@ -103,6 +103,7 @@
 		
 			var cur = null
 			function fscreenon() {
+			if (parent.document.getElementById("main").style.margin == "auto") {
 				parent.document.getElementById("main").style.margin = "0%";
 				parent.document.getElementById("blockrandom").width = parent.document.body.clientWidth;
 				parent.document.getElementById("blockrandom").height = parent.document.documentElement.clientHeight;
@@ -110,9 +111,7 @@
 				document.getElementById('inputFieldContainer').style.left = '722px';
 				document.getElementById('box').style.width = '692px';
 				document.getElementById('box').style.height = '519px';
-			}
-
-			function fscreenoff() {
+			} else {
 				parent.document.getElementById("main").style.margin = "auto";
 				parent.document.getElementById("blockrandom").style.marginTop = "-150px";
 				parent.document.getElementById("posmodule4").style.display = "block";
@@ -128,6 +127,10 @@
 				document.getElementById('box').style.width = '320px';
 				document.getElementById('box').style.height = '240px';
 			}
+				
+			}
+
+
 			function fscreen_on() {
             var docElm = document.documentElement;
             if (docElm.requestFullscreen) {
@@ -395,25 +398,33 @@
 			</div>
 			<div id="underScrBttn">
 			
-				<tr>
-						<img id="currenttime" src=""></img>
-						<!--textarea id="currenttime" rows="1" cols="5">12</textarea-->
-						<textarea id="tipssend" rows="1" cols="5">12</textarea>
+				<!--tr>
+						<img id="currenttime" src=""></img-->
+						<!--old trash textarea id="currenttime" rows="1" cols="5">12</textarea-->
+						<!--textarea id="tipssend" rows="1" cols="5">12</textarea>
 						<textarea id="tipscomment" rows="1" cols="5">comment</textarea>
 						<input type="button" id="" value="tip" onclick="ajaxChat.sendtip(document.getElementById('tipssend').value,document.getElementById('tipscomment').value);"/>
+				</tr-->
+				<tr>
+					<input type="button" id="" value="volume block" onclick=""/>
+					<input type="button" id="" value="refresh block" onclick=""/>
+					<input type="button" id="" value="fullscreenON/off" onclick="fscreenon()"/>
+					<input type="button" id="" value="video on\off block" onclick=""/>
+					<input type="button" id="" value="video hide block" onclick=""/>
+					<input type="button" id="" value="resize" onclick="resize()"/>
 				</tr>
 				<tr>
-						<input type="button" id="" value="vojar" onclick="ajaxChat.vojar();"/>
-						<input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/>
-				</tr>
-				<tr>
-						<input type="button" id="" value="resize" onclick="resize()"/>
-						<!--button id="view1fullscreen">Fullscreen</button-->
-						<input type="button" id="" value="fullscreenON" onclick="fscreenon()"/>
-						<input type="button" id="" value="fullscreenOFF" onclick="fscreenoff()"/>
-				</tr>
-				<tr>
+					<input type="button" id="" value="go private" onclick="javascript:ajaxChat.sendMessageWrapper('/invite admin');"/>
 					<input type="button" id="" value="stratGroup" onclick="ajaxChat.startgroup()" />
+					<input type="button" id="" value="tip block" onclick="" />
+					<img id="currenttips" src="image.php?t=[SHOW_CURRENT_COINS/]"></img>
+				</tr>
+				<tr>
+					<input type="button" id="" value="vojar" onclick="ajaxChat.vojar();"/>
+					<input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/>
+						<!--button id="view1fullscreen">Fullscreen</button-->
+				</tr>
+				<tr>
 					<input type="button" id="" value="joinGroup" onclick="ajaxChat.joingroup()"/>
 				</tr>
 			</div>
@@ -471,7 +482,7 @@
 			<select id="styleSelection" onchange="ajaxChat.setActiveStyleSheet(ajaxChat.getSelectedStyle());">[STYLE_OPTIONS/]</select>
 			<label for="languageSelection">[LANG]language[/LANG]:</label>
 			<select id="languageSelection" onchange="ajaxChat.switchLanguage(this.value);">[LANGUAGE_OPTIONS/]</select>
-			<img id="currenttips" src="image.php?t=[SHOW_CURRENT_COINS/]"></img>
+
 
 			<!--textarea disabled="true" id="currenttips" rows="1" cols="5" >[SHOW_CURRENT_COINS/]</textarea-->
   		</div>
