@@ -161,7 +161,7 @@ padding: 11px 1px 1px 7px;
 #content #textStyleContainer
 {
 top: 26px;
-left: 468px;
+left: 521px;
 padding: 3px;
 position: absolute;
 background: url('../img/text_back.png') no-repeat;
@@ -273,18 +273,55 @@ padding: 10px 1px 2px 6px;
 
 #audioButton
 {
-	
+	position: absolute;
+	top: 18px;
+	right: 245px;
+	width: 59px;
+	height: 22px;
+	background:url('../img/audio.png') no-repeat;
+}
+
+#audioButton.off {
+	background:url('../img/audio-off.png') no-repeat;
+	width: 59px;
+	height: 22px;
 }
 
 
-
-
-.pos_sound
+body
 {
-	position: relative;
-	top: 20px;
-	left: 20px;
+
+
+          scrollbar-face-color:#5997CA; 
+
+          scrollbar-shadow-color: #ffffff;
+
+          scrollbar-highlight-color: #ffffff;
+
+          scrollbar-3dlight-color: #5997CA;
+
+          scrollbar-darkshadow-color: #5997CA; 
+
+          scrollbar-track-color: #F6F6F6;
+
+          scrollbar-arrow-color: #F6F6F6;
+
+
 }
+
+
+
+
+
+
+
+#div_main
+{
+//	background: url('../img/video.png');
+//	width: 481px; 
+//	height: 346px;
+}
+
 
 
 
@@ -295,14 +332,14 @@ padding: 10px 1px 2px 6px;
 	//bottom:57px;
 	top: 51px;
 	padding:3px;
+	width: 150px;
 }
 #content #optionsContainer {
-	position:absolute;
-	//top:20px;
-	top:100px;
-	right:20px;
-	padding:3px;
-	padding-right:0px;
+position: absolute;
+top: 18px;
+right: 20px;
+padding: 3px;
+padding-right: 0px;
 }
 #content #bbCodeContainer input {
 	padding-left:4px;
@@ -338,6 +375,8 @@ padding: 10px 1px 2px 6px;
 	padding-top:2px;
 	padding-right:10px;
 	padding-bottom:2px;
+	border-radius: 10px;
+	margin-left: 50px;
 }
 #content #chatList img {
 	vertical-align:middle;
@@ -367,13 +406,13 @@ padding: 10px 1px 2px 6px;
 	
 }
 #content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
-	height:30px;
-	padding-left:10px;
-	padding-top:4px;
-	padding-right:10px;
-	padding-bottom:4px;
-	margin:0px;
-	text-align:center;
+	height: 30px;
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	margin: 0px;
+	color: brown!important;
 }
 #content #onlineListContainer #content #helpContainer #helpList, #content #settingsContainer #settingsList {
 	position:absolute;
