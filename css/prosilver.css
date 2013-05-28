@@ -60,7 +60,7 @@
 		color:#333333;
 	}
 	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #bbCodeContainer, #content #colorCodesContainer, #content #emoticonsContainer {
-		border-color:#105289;
+		//border-color:#105289;
 		//background-color:#FFF;
 	}
 	.statusContainerOn {
@@ -92,7 +92,7 @@
 	    background:url('../img/users.png') no-repeat;
 	}
 	#content #optionsContainer #audioButton {
-	    background:url('../img/audio.png') no-repeat;
+	    //background:url('../img/audio.png') no-repeat;
 	}
 	#content #optionsContainer #audioButton.off {
 	    background:url('../img/audio-off.png') no-repeat;
@@ -103,11 +103,23 @@
 	#content #optionsContainer #autoScrollButton.off {
 	    background:url('../img/autoscroll-off.png') no-repeat;
 	}
-	#content .rowEven {
-		background-color:#E1EBF2;
+	
+	
+	#chatList .rowEven {
+		//background-color:#E1EBF2;
+		//background: url('../img/message_text.png') no-repeat;
+		//width: 543px;
+		//height: 23px;
+		background: white;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		
 	}
-	#content .rowOdd {
-		background-color:#ECF3F7;
+	#chatList .rowOdd {
+		//background-color:#ECF3F7;
+		background: white;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	#content .guest {
 		color:gray;
@@ -137,7 +149,7 @@
 		border-color:red;
 	}
 	#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
-		background-color:#E1EBF2;
+		//background-color:#E1EBF2;
 		color:#105289;
 	}
 	#content #settingsContainer #settingsList input.playback {
