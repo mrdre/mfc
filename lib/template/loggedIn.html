@@ -415,21 +415,21 @@
 				</tr-->
 				<tr>
 					<input type="button" id="" value="volume block" onclick=""/>
-					<input type="button" id="" value="refresh block" onclick=""/>
+					<input type="button" id="" value="refresh block" onclick="ajaxChat.videofunction('refresh')"/>
 					<input type="button" id="" value="fullscreen ON/off" onclick="fscreenon()"/>
-					<input type="button" id="" value="video on\off block" onclick=""/>
-					<input type="button" id="" value="video hide block" onclick=""/>
+					<input type="button" id="" value="video on\off block" onclick="ajaxChat.videofunction('onoff')"/>
+					<input type="button" id="" value="video hide block" onclick="ajaxChat.videofunction('hide')"/>
 					<input type="button" id="" value="resize" onclick="resize()"/>
 				</tr>
 				<tr>
-					<input type="button" id="" value="go private" onclick="javascript:ajaxChat.sendMessageWrapper('/invite admin');"/>
-					<input type="button" id="" value="stratGroup" onclick="ajaxChat.startgroup()" />
+					<input type="button" id="" value="go private" onclick="ajaxChat.videofunction('goprivate');"/>
+					<input type="button" id="" value="stratGroup" onclick="ajaxChat.videofunction('groupStart');" />
 					<input type="button" id="" value="tip block" onclick="" />
 					<img id="currenttips" src="image.php?t=[SHOW_CURRENT_COINS/]"></img>
 				</tr>
 				<tr>
-					<input type="button" id="" value="vojar" onclick="ajaxChat.vojar();"/>
-					<input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/>
+					<input type="button" id="" value="vojar" onclick="ajaxChat.videofunction('chVojar');"/>
+					<!--input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/-->
 						<!--button id="view1fullscreen">Fullscreen</button-->
 				</tr>
 				<tr>
