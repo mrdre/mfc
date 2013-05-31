@@ -270,6 +270,38 @@ padding: 10px 1px 2px 6px;
 	background: url('../img/smile_a.png') no-repeat;
 }
 
+.bth_private
+{
+	background: url('../img/private.png') no-repeat;
+	width: 155px;
+	height: 33px;
+	border: none;
+}
+
+.bth_private:hover
+{
+	background: url('../img/private_a.png') no-repeat;
+}
+
+.bth_startgroupe
+{
+	background: url('../img/start_group.png') no-repeat;
+	width: 108px;
+	height: 24px;
+	border: none;
+}
+
+
+.bth_joingroupe
+{
+	background: url('../img/join_group.png') no-repeat;
+	width: 108px;
+	height: 24px;
+	border: none;
+
+}
+
+
 
 #audioButton
 {
