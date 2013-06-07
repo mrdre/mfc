@@ -3501,7 +3501,6 @@ var ajaxChat = {
         }
       }
     };
-
 		// var array;
 		// for(var i=0; i<elems.length; i++) array[i] = elems[i].id;
 		// for(i=0; i<array.length; i++) alert(array[i]);
