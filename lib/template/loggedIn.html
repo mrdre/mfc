@@ -433,9 +433,11 @@
 					<input type="button" id="video_resize" onclick="bth_change(this, 'bth_video_resize', 'bth_video_resize_full');resize()" class="bth_video_resize" />
 				</tr>
 				<tr>
-					<input type="button" id="" value="" onclick="javascript:ajaxChat.sendMessageWrapper('/invite admin');" class="bth_private"/>
-					<input type="button" id="" value="" onclick="ajaxChat.startgroup()" class="bth_startgroupe"/>
-					<input type="button" id="" value="" onclick="" class="bth_tipme"/>
+					<input type="button" id="" value="go private" onclick="ajaxChat.videofunction('goprivate');"/>
+					<input type="button" id="startgroupbutton" value="stratGroup" onclick="ajaxChat.videofunction('groupStart');" />
+					<input style="display:none;" type="button" id="joingroupbutton" value="joinGroup" onclick="ajaxChat.joingroup()"/>
+					<input type="button" id="" value="quit" onclick="ajaxChat.videofunction('quitP');" />
+					<input type="button" id="" value="tip block" onclick="" />
 					<img id="currenttips" src="image.php?t=[SHOW_CURRENT_COINS/]"></img>
 				</tr>
 				<tr>
