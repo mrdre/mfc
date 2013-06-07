@@ -301,6 +301,89 @@ padding: 10px 1px 2px 6px;
 
 }
 
+#underScrBttn
+{
+//width: 54%;
+}
+
+.bth_refresh
+{
+	background: url('../img/bth_refresh.png') no-repeat;
+	width: 25px;
+	height: 27px;
+	border: none;
+}
+
+.bth_refresh:hover
+{
+	background: url('../img/bht_refresh_a.png') no-repeat;
+}
+
+.bth_volume
+{
+	background: url('../img/bth_volume.png') no-repeat;
+	width: 49px;
+	height: 25px;
+	border: none;
+
+}
+
+.bth_video_hide
+{
+	background: url('../img/bth_video_hide.png') no-repeat;
+	width: 77px;
+	height: 24px;
+	border: none;
+}
+
+
+.bth_video_display
+{
+	background: url('../img/bth_video_display.png') no-repeat;
+	width: 77px;
+	height: 24px;
+	border: none;
+}
+
+
+
+
+.bth_video_resize
+{
+	width: 26px;
+	height: 29px;
+	background:url('../img/bth_video_resize.png') no-repeat;
+	border: none;
+}
+
+.bth_video_resize_full {
+	background:url('../img/bth_video_resize_a.png') no-repeat;
+	width: 26px;
+	height: 29px;
+	border: none;
+}
+
+
+
+
+
+
+.bth_fullscreen
+{
+	background: url('../img/bth_hdsrc-off.jpg') no-repeat;
+	width: 54px;
+	height: 45px;
+	border: none;
+
+}
+
+.bth_fullscreen_a
+{
+	background: url('../img/bth_hdsrc-on.jpg') no-repeat;
+	width: 54px;
+	height: 45px;
+	border: none;
+}
 
 
 #audioButton
@@ -308,17 +391,55 @@ padding: 10px 1px 2px 6px;
 	position: absolute;
 	top: 18px;
 	right: 245px;
-	width: 59px;
+	width: 58px;
 	height: 22px;
-	background:url('../img/audio.png') no-repeat;
+	background:url('../img/audio_off.jpg') no-repeat;
 }
 
 #audioButton.off {
-	background:url('../img/audio-off.png') no-repeat;
-	width: 59px;
+	background:url('../img/audio_on.jpg') no-repeat;
+	width: 58px;
 	height: 22px;
 }
 
+
+
+
+.bth_video
+{
+	background: url('../img/bth_video-off.jpg') no-repeat;
+	width: 40px;
+	height: 50px;
+	border: none;
+}
+
+.bth_video_a
+{
+	background: url('../img/bth_video-on.jpg') no-repeat;
+	width: 40px;
+	height: 50px;
+	border: none;
+}
+
+
+
+
+.bth_tipme
+{
+	background: url('../img/bth_tipme.png') no-repeat;
+	width: 68px;
+	height: 29px;
+	border: none;
+}
+
+
+.bth_tipme:hover
+{
+	background: url('../img/bth_tipme_a.png') no-repeat;
+
+
+
+}
 
 body
 {
