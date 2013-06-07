@@ -427,17 +427,17 @@
 					
 					<input type="button" id="" value="" onclick="ajaxChat.videofunction('refresh')" class="bth_refresh"/>
 					
-					<input type="button" id="bth_fullscreen" onclick="bth_change(this, 'bth_fullscreen', 'bth_fullscreen_a');fscreenon()" class="bth_fullscreen"/>
+					<!-- <input type="button" id="bth_fullscreen" onclick="bth_change(this, 'bth_fullscreen', 'bth_fullscreen_a');fscreenon()" class="bth_fullscreen"/> -->
 					<input type="button" id="bth_video" value="" onclick="bth_change(this, 'bth_video', 'bth_video_a');ajaxChat.videofunction('onoff')" class="bth_video"/>
 					<input type="button" id="video_hide" value="" onclick="bth_change(this, 'bth_video_hide', 'bth_video_display');ajaxChat.videofunction('hide')" class="bth_video_hide"/>
 					<input type="button" id="video_resize" onclick="bth_change(this, 'bth_video_resize', 'bth_video_resize_full');resize()" class="bth_video_resize" />
 				</tr>
 				<tr>
-					<input type="button" id="" value="go private" onclick="ajaxChat.videofunction('goprivate');"/>
-					<input type="button" id="startgroupbutton" value="stratGroup" onclick="ajaxChat.videofunction('groupStart');" />
+					<input type="button" id="" value="" onclick="ajaxChat.videofunction('goprivate');" class="bth_private"/>
+					<input type="button" id="startgroupbutton" value="" onclick="bth_change(this, 'bth_startgroupe', 'bth_joingroupe');ajaxChat.videofunction('groupStart');" class="bth_startgroupe"/>
 					<input style="display:none;" type="button" id="joingroupbutton" value="joinGroup" onclick="ajaxChat.joingroup()"/>
 					<input type="button" id="" value="quit" onclick="ajaxChat.videofunction('quitP');" />
-					<input type="button" id="" value="tip block" onclick="" />
+					<input type="button" id="" value="" onclick="" class="bth_tipme"/>
 					<img id="currenttips" src="image.php?t=[SHOW_CURRENT_COINS/]"></img>
 				</tr>
 				<tr>
