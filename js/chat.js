@@ -3580,6 +3580,118 @@ var ajaxChat = {
 			default:
 				break;
 		}
+		
+		
+		
+		
+		// <div id="optionsContainer">
+// <input id="helpButton" class="button" type="image" src="img/pixel.gif" alt="Показать/скрыть подсказку" title="Показать/скрыть подсказку" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/>
+		  	// <div id="helpContainer" style="display:none;">
+ 			// <h3>[LANG]help[/LANG]</h3>
+ 			// <div id="helpList">
+				// <table>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescJoin[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeJoin[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescJoinCreate[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeJoinCreate[/LANG]</td>
+					
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescInvite[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeInvite[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescUninvite[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeUninvite[/LANG]</td>
+					// </tr>
+					
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescLogout[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeLogout[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescPrivateMessage[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodePrivateMessage[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+					
+						// <td class="desc">[LANG]helpItemDescQueryOpen[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeQueryOpen[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescQueryClose[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeQueryClose[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescAction[/LANG]</td>				
+						// <td class="code">[LANG]helpItemCodeAction[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescDescribe[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeDescribe[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescIgnore[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeIgnore[/LANG]</td>
+					
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescIgnoreList[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeIgnoreList[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescWhereis[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeWhereis[/LANG]</td>
+					// </tr>
+					
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescKick[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeKick[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescUnban[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeUnban[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+					
+						// <td class="desc">[LANG]helpItemDescBans[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeBans[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescWhois[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeWhois[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescWho[/LANG]</td>
+					
+						// <td class="code">[LANG]helpItemCodeWho[/LANG]</td>
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescList[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeList[/LANG]</td>
+					// </tr>
+					// <tr class="rowEven">
+						// <td class="desc">[LANG]helpItemDescRoll[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeRoll[/LANG]</td>
+					
+					// </tr>
+					// <tr class="rowOdd">
+						// <td class="desc">[LANG]helpItemDescNick[/LANG]</td>
+						// <td class="code">[LANG]helpItemCodeNick[/LANG]</td>
+					// </tr>
+				// </table>
+			// </div>
+	  	// </div>
+	  	// <div id="settingsContainer" style="display:none;">
+		
+		
+		
+		
+		
+		
 	}
 
 }
