@@ -1252,6 +1252,9 @@ var ajaxChat = {
 				if(this.userRole == 2 || this.userRole == 3) {
 					menu	+= '<li><a href="javascript:ajaxChat.sendMessageWrapper(\'/bans\');">'
 							+ this.lang['userMenuBans']
+							+ '</a></li>'
+							+ '<li><a href="javascript:ajaxChat.videofunction(\'quitP\')">'
+							+ 'quit from private'
 							+ '</a></li>';
 				}
 				
