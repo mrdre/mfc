@@ -3239,7 +3239,8 @@ var ajaxChat = {
 								document.getElementById("currenttips").src = 'image.php?t='+parseFloat(xmlhttp.responseText);
 							} else
 							{
-								ajaxChat.sendMessageWrapper('/uninvite admin');
+								ajaxChat.videofunction('quitP');
+								//ajaxChat.sendMessageWrapper('/uninvite admin');
 								alert('Not enough money');
 							}
 						}
