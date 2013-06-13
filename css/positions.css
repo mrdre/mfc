@@ -43,7 +43,7 @@
 
 #content {
 	position:absolute;
-	width:100%;
+	width:99%;
 	height:100%;
 }
 #content #copyright {
@@ -60,6 +60,8 @@
 	position:absolute;
 	left:20px;
 	top:20px;
+	//display: none;
+	visibility: hidden;
 }
 #content #flashContent {
 	position:absolute;
@@ -436,10 +438,39 @@ padding: 10px 1px 2px 6px;
 .bth_tipme:hover
 {
 	background: url('../img/bth_tipme_a.png') no-repeat;
+}
 
 
+.bth_peopleonline
+{
+	background: url('../img/bth_peopleonline.png') no-repeat;
+	width: 16px;
+	height: 12px;
+	border: none;
 
 }
+
+.bth_peopleonline_a
+{
+	background: url('../img/bth_peopleonline_a.png') no-repeat;
+	width: 16px;
+	height: 12px;
+	border: none;
+
+}
+
+.bth_logout
+{
+position: absolute;
+right: -6px;
+top: -40px;
+z-index: 11;
+background: red;
+
+}
+
+
+
 
 body
 {

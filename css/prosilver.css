@@ -89,7 +89,7 @@
 	    background:url('../img/settings.png') no-repeat;
 	}
 	#content #optionsContainer #onlineListButton {
-	    background:url('../img/users.png') no-repeat;
+	    //background:url('../img/users.png') no-repeat;
 	}
 	#content #optionsContainer #audioButton {
 	    //background:url('../img/audio.png') no-repeat;

@@ -349,6 +349,61 @@
 				else { elem.className = class1; }
 			}
 			
+			function CreateTokens(r)
+			{
+				el = r.toString();
+				var n = el.length;
+				var symb = "";
+				var stroka = "";
+				for (var i=0; i<n; i++)
+				{
+					symb = el.charAt(i);
+					im = CharToImage(symb);
+					stroka += "<img src=\""+im+"\"/>";
+				}
+				document.getElementById("main_tokens").innerHTML = stroka;
+			}
+
+			function CharToImage(symb)
+			{
+				var img = "";
+				if (symb=='0')
+				{ img = 'images/number_0.png'; }
+				else
+				if (symb=='1')
+				{ img = 'images/number_1.png'; }
+				else
+				if (symb=='2')
+				{ img = 'images/number_2.png'; }
+				else
+				if (symb=='3')
+				{ img = 'images/number_3.png'; }
+				else
+				if (symb=='4')
+				{ img = 'images/number_4.png'; }
+				else
+				if (symb=='5')
+				{ img = 'images/number_5.png'; }
+				else
+				if (symb=='6')
+				{ img = 'images/number_6.png'; }
+				else
+				if (symb=='7')
+				{ img = 'images/number_7.png'; }
+				else
+				if (symb=='8')
+				{ img = 'images/number_8.png'; }
+				else
+				if (symb=='9')
+				{ img = 'images/number_9.png';}
+				return img;
+			}
+			
+			
+			
+			
+			
+			
 		// ]]>
 	</script>
 	
@@ -372,17 +427,19 @@
 		<!--div id="headlineContainer">
 			<h1>[LANG]title[/LANG]</h1>
 		</div-->
-
+		<input type="button" id="logoutButton" value="[LANG]logout[/LANG]" onclick="ajaxChat.logout();" class="bth_logout"/>
 		<div id="current_coins">
 		</div>
 		<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
-		<div id="statusIconContainer" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div>
+		<!-- <div id="statusIconContainer" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div> -->
 		<div id="optionsContainer">
-			<input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/>
+			<!-- <input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/> -->
+			People
+			<input type="image" src="img/pixel.gif" class="bth_peopleonline" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="bth_change(this, 'bth_peopleonline', 'bth_peopleonline_a');toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
+			Options
 			<input type="image" src="img/pixel.gif" class="button" id="settingsButton" alt="[LANG]toggleSettings[/LANG]" title="[LANG]toggleSettings[/LANG]" onclick="toggleContainer('settingsContainer', new Array('onlineListContainer','helpContainer'));"/>
-			<input type="image" src="img/pixel.gif" class="button" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
 			
-			<input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/>
+			<!-- <input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/> -->
   		</div>
 		<!--[if lt IE 7]>
 			<div></div>
@@ -437,17 +494,17 @@
 					<input type="button" id="startgroupbutton" value="" onclick="bth_change(this, 'bth_startgroupe', 'bth_joingroupe');ajaxChat.videofunction('groupStart');" class="bth_startgroupe"/>
 					<input style="display:none;" type="button" id="joingroupbutton" value="joinGroup" onclick="ajaxChat.joingroup()"/>
 					<input type="button" id="" value="quit" onclick="ajaxChat.videofunction('quitP');" />
-					<input type="button" id="" value="" onclick="" class="bth_tipme"/>
-					<img id="currenttips" src="image.php?t=[SHOW_CURRENT_COINS/]"></img>
+					
 				</tr>
 				<tr>
+
 					<input type="button" id="" value="vojar" onclick="ajaxChat.videofunction('chVojar');"/>
+					<div id="main_tokens"></div>
+					<script>CreateTokens([SHOW_CURRENT_COINS/]);</script>
 					<!--input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/-->
 						<!--button id="view1fullscreen">Fullscreen</button-->
 				</tr>
-				<tr>
-					<input type="button" id="" value="" onclick="ajaxChat.joingroup()" class="bth_joingroupe"/>
-				</tr>
+				
 			</div>
 			
 		</div>
@@ -491,7 +548,7 @@
 		</div>
 		
 		<div id="logoutChannelContainer">
-  			<input type="button" id="logoutButton" value="[LANG]logout[/LANG]" onclick="ajaxChat.logout();"/>
+  			
 			<!--label for="channelSelection">[LANG]channel[/LANG]:</label-->
 			<label for="styleSelection">[LANG]style[/LANG]:</label>
 			<select id="styleSelection" onchange="ajaxChat.setActiveStyleSheet(ajaxChat.getSelectedStyle());">[STYLE_OPTIONS/]</select>
