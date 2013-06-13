@@ -431,9 +431,8 @@
 		<div id="current_coins">
 		</div>
 		<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
-		<div id="statusIconContainer" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div>
+		<div id="statusIconContainer" style="display:none" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div>
 		<div id="optionsContainer">
-			<input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/>
 			People
 			<input type="image" src="img/pixel.gif" class="bth_peopleonline" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="bth_change(this, 'bth_peopleonline', 'bth_peopleonline_a');toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
 			Options
@@ -547,17 +546,17 @@
 		
 		</div>
 		
-		<div id="logoutChannelContainer">
+		<!--div id="logoutChannelContainer"-->
   			
 			<!--label for="channelSelection">[LANG]channel[/LANG]:</label-->
-			<label for="styleSelection">[LANG]style[/LANG]:</label>
+			<!--label for="styleSelection">[LANG]style[/LANG]:</label>
 			<select id="styleSelection" onchange="ajaxChat.setActiveStyleSheet(ajaxChat.getSelectedStyle());">[STYLE_OPTIONS/]</select>
 			<label for="languageSelection">[LANG]language[/LANG]:</label>
-			<select id="languageSelection" onchange="ajaxChat.switchLanguage(this.value);">[LANGUAGE_OPTIONS/]</select>
+			<select id="languageSelection" onchange="ajaxChat.switchLanguage(this.value);">[LANGUAGE_OPTIONS/]</select-->
 
 
 			<!--textarea disabled="true" id="currenttips" rows="1" cols="5" >[SHOW_CURRENT_COINS/]</textarea-->
-  		</div>
+  		<!--/div-->
 		
 		
 		
@@ -566,122 +565,25 @@
 			<div id="pv_msg_spoiler_div" class="spoiler" style="display:none;">
 				<span class="onner" id="p_messg_spoiler" onclick="showSpoiler(this);ajaxChat.parse_in_private_msg();">Private messages 2</span>
 				<div class="inner" id="p_user_list" style="display:none;">
-				
 						<tr><td>User 1</td><td>(3)</td></tr>
 						<tr><td>User 2</td><td>(5)</td></tr>
 						<tr><td>User 3</td><td>(7)</td></tr>
-				
 				</div>
-
 			</div>
-
-			
 	  		<div id="onlineList"></div>
-
-	  	</div>
-	  	<div id="helpContainer" style="display:none;">
- 			<h3>[LANG]help[/LANG]</h3>
- 			<div id="helpList">
-				<table>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescJoin[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeJoin[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescJoinCreate[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeJoinCreate[/LANG]</td>
-					
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescInvite[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeInvite[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescUninvite[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeUninvite[/LANG]</td>
-					</tr>
-					
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescLogout[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeLogout[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescPrivateMessage[/LANG]</td>
-						<td class="code">[LANG]helpItemCodePrivateMessage[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-					
-						<td class="desc">[LANG]helpItemDescQueryOpen[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeQueryOpen[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescQueryClose[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeQueryClose[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescAction[/LANG]</td>				
-						<td class="code">[LANG]helpItemCodeAction[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescDescribe[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeDescribe[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescIgnore[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeIgnore[/LANG]</td>
-					
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescIgnoreList[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeIgnoreList[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescWhereis[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeWhereis[/LANG]</td>
-					</tr>
-					
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescKick[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeKick[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescUnban[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeUnban[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-					
-						<td class="desc">[LANG]helpItemDescBans[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeBans[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescWhois[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeWhois[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescWho[/LANG]</td>
-					
-						<td class="code">[LANG]helpItemCodeWho[/LANG]</td>
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescList[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeList[/LANG]</td>
-					</tr>
-					<tr class="rowEven">
-						<td class="desc">[LANG]helpItemDescRoll[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeRoll[/LANG]</td>
-					
-					</tr>
-					<tr class="rowOdd">
-						<td class="desc">[LANG]helpItemDescNick[/LANG]</td>
-						<td class="code">[LANG]helpItemCodeNick[/LANG]</td>
-					</tr>
-				</table>
-			</div>
 	  	</div>
 	  	<div id="settingsContainer" style="display:none;">
  			<h3>[LANG]settings[/LANG]</h3>
  			<div id="settingsList">
 				<table>
+					<tr class="rowOdd">
+						<label for="styleSelection">[LANG]style[/LANG]:</label>
+						<select id="styleSelection" onchange="ajaxChat.setActiveStyleSheet(ajaxChat.getSelectedStyle());">[STYLE_OPTIONS/]</select>
+					</tr>
+					<tr class="rowEven">
+						<label for="languageSelection">[LANG]language[/LANG]:</label>
+						<select id="languageSelection" onchange="ajaxChat.switchLanguage(this.value);">[LANGUAGE_OPTIONS/]</select>
+					</tr>
 					<tr class="rowOdd">
 						<td><label for="bbCodeSetting">[LANG]settingsBBCode[/LANG]</label></td>
 						<td class="setting"><input type="checkbox" id="bbCodeSetting" onclick="ajaxChat.setSetting('bbCode', this.checked);"/></td>
