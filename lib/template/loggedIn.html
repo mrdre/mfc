@@ -431,15 +431,15 @@
 		<div id="current_coins">
 		</div>
 		<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
-		<!-- <div id="statusIconContainer" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div> -->
+		<div id="statusIconContainer" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div>
 		<div id="optionsContainer">
-			<!-- <input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/> -->
+			<input type="image" src="img/pixel.gif" class="button" id="helpButton" alt="[LANG]toggleHelp[/LANG]" title="[LANG]toggleHelp[/LANG]" onclick="toggleContainer('helpContainer', new Array('onlineListContainer','settingsContainer'));"/>
 			People
 			<input type="image" src="img/pixel.gif" class="bth_peopleonline" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="bth_change(this, 'bth_peopleonline', 'bth_peopleonline_a');toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
 			Options
 			<input type="image" src="img/pixel.gif" class="button" id="settingsButton" alt="[LANG]toggleSettings[/LANG]" title="[LANG]toggleSettings[/LANG]" onclick="toggleContainer('settingsContainer', new Array('onlineListContainer','helpContainer'));"/>
 			
-			<!-- <input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/> -->
+			<input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/>
   		</div>
 		<!--[if lt IE 7]>
 			<div></div>
@@ -502,7 +502,7 @@
 					<div id="main_tokens"></div>
 					<script>CreateTokens([SHOW_CURRENT_COINS/]);</script>
 					<!--input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/-->
-						<!--button id="view1fullscreen">Fullscreen</button-->
+					<!--button id="view1fullscreen">Fullscreen</button-->
 				</tr>
 				
 			</div>
