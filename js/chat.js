@@ -1076,7 +1076,7 @@ var ajaxChat = {
 			var encodedUserName = this.scriptLinkEncode(userName);
 			var str	= '<div id="'
 					+ this.getUserDocumentID(userID)
-					+ '"><a href="javascript:ajaxChat.toggleUserMenu(\''
+					+ '"><img src="img/help.png"/><a href="javascript:ajaxChat.toggleUserMenu(\''
 					+ this.getUserMenuDocumentID(userID)
 					+ '\', \''
 					+ encodedUserName
@@ -2018,6 +2018,20 @@ var ajaxChat = {
 	},
 	
 	showHide: function(id, styleDisplay, displayInline) {
+		var node = document.getElementById(id);
+		if(node) {
+			if(styleDisplay) {
+				node.style.display = styleDisplay;
+			} else {
+				if(node.style.display == 'none') {
+					node.style.display = (displayInline ? 'inline' : 'block'); 
+				} else {
+					node.style.display = 'none';
+				}
+			}	
+		}
+	},
+	showMoreSmiley: function(id, styleDisplay, displayInline) {
 		var node = document.getElementById(id);
 		if(node) {
 			if(styleDisplay) {

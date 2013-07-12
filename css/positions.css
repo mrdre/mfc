@@ -511,13 +511,39 @@ body
 
 
 #content #emoticonsContainer {
-	position:absolute;
-	right:20px;
-	//bottom:57px;
-	top: 51px;
-	padding:3px;
-	width: 150px;
+	position: absolute;
+	right: 227px;
+	top: -301px;
+	padding: 3px;
+	width: 596px;
+	background: grey;
+	height: 289px;
 }
+
+#content #showMoreSmiley {
+	position: absolute;
+	right: 227px;
+	top: -273px;
+	padding: 3px;
+	width: 596px;
+	background: green;
+	height: 261px;
+	
+	
+}
+
+#content .moresmilesclose
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+
+}
+
+
+
+
+
 #content #optionsContainer {
 position: absolute;
 top: 18px;

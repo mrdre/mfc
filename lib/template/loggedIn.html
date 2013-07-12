@@ -353,8 +353,15 @@
 			{
 				el = r.toString();
 				var n = el.length;
+				var kolvo_0 = (7-n);			
 				var symb = "";
 				var stroka = "";
+				for (var j=0; j<kolvo_0; j++)
+				{
+					symb = '0';
+					im = CharToImage(symb);
+					stroka += "<img src=\""+im+"\"/>";
+				}
 				for (var i=0; i<n; i++)
 				{
 					symb = el.charAt(i);
@@ -398,12 +405,6 @@
 				{ img = 'images/number_9.png';}
 				return img;
 			}
-			
-			
-			
-			
-			
-			
 		// ]]>
 	</script>
 	
@@ -490,8 +491,8 @@
 				</tr>
 				<tr>
 					<input type="button" id="" value="" onclick="ajaxChat.videofunction('goprivate');" class="bth_private"/>
-					<input type="button" id="startgroupbutton" value="" onclick="bth_change(this, 'bth_startgroupe', 'bth_joingroupe');ajaxChat.videofunction('groupStart');" class="bth_startgroupe"/>
-					<input style="display:none;" type="button" id="joingroupbutton" value="joinGroup" onclick="ajaxChat.joingroup()"/>
+					<input type="button" id="startgroupbutton" value="" onclick="ajaxChat.videofunction('groupStart');" class="bth_startgroupe"/>
+					<input style="display:none;" type="button" id="joingroupbutton" value="" onclick="ajaxChat.joingroup()" class="bth_joingroupe"/>
 					<!--input type="button" id="" value="quit" onclick="ajaxChat.videofunction('quitP');" /-->
 					
 				</tr>
@@ -526,15 +527,15 @@
 				<input type="button" value="[LANG]bbCodeLabelCode[/LANG]" title="[LANG]bbCodeTitleCode[/LANG]" onclick="ajaxChat.insertBBCode('code');"/>
 				<input type="button" value="[LANG]bbCodeLabelURL[/LANG]" title="[LANG]bbCodeTitleURL[/LANG]" onclick="ajaxChat.insertBBCode('url');"/>
 				-->
-				
-				
 				<input type="button" title="smiles" onclick="ajaxChat.showHide('emoticonsContainer', null);" class="bth_smiles"/>
-				
 				<input type="button" title="[LANG]bbCodeTitleImg[/LANG]" onclick="ajaxChat.insertBBCode('img');" class="bth_picture"/>
 				<input type="button" title="[LANG]bbCodeTitleColor[/LANG]" onclick="ajaxChat.showHide('colorCodesContainer', null);" class="bth_color"/>
 			</div>
 		
-		<div id="emoticonsContainer" style="display:none;" dir="ltr"></div>
+		<div id="emoticonsContainer" style="display:none;" dir="ltr">
+			
+		
+		</div>
 		<div id="textStyleContainer" style="display:none;">
 			<input type="button" title="[LANG]bbCodeTitleBold[/LANG]" onclick="ajaxChat.insertBBCode('b');" class="bold"/>
 			<input type="button" title="[LANG]bbCodeTitleItalic[/LANG]" onclick="ajaxChat.insertBBCode('i');" class="italic"/>
@@ -542,8 +543,9 @@
 		</div>
 		
 		<div id="colorCodesContainer" style="display:none;" dir="ltr"></div>
-		
-		
+			<div id="showMoreSmiley" style="display:none;" dir="ltr">
+				<input type="button" value="x" title="smiles" onclick="ajaxChat.showMoreSmiley('showMoreSmiley', null);" class="moresmilesclose"/>
+			</div>
 		</div>
 		
 		<!--div id="logoutChannelContainer"-->
