@@ -3379,10 +3379,13 @@ var ajaxChat = {
 					{
 						document.getElementById("pv_msg_spoiler_div").style.display = 'block';
 						document.getElementById("p_messg_spoiler").innerHTML = 'Private messages ('+parseFloat(xmlhttp.responseText)+')';
-					} 
+					} else {
+						if (parseFloat(xmlhttp.responseText)==0){
+							document.getElementById("pv_msg_spoiler_div").style.display = 'none';
+						}
+					}
 					ajaxChat.pv_msg_count = parseFloat(xmlhttp.responseText);
 					ajaxChat.parse_in_private_msg();
-					
 				}
 			}
 		  }
@@ -3409,10 +3412,15 @@ var ajaxChat = {
 		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
 				document.getElementById("p_user_list").innerHTML =xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
+				ajaxChat.updateopenedmsg();
+
 			}
 		  }
 		xmlhttp.open("GET",requestUrl,true);
 		xmlhttp.send();
+		
+
+		
 	},
 	z_alert: function(username){
 		// if (document.getElementById("WIND").style.display != 'block')
@@ -3508,7 +3516,6 @@ var ajaxChat = {
 	          + "test[]" + "="
 	          + encodeURI(elems[i].id);
 		}
-
 	xmlhttp.open('POST', this.ajaxURL, true); // Открываем асинхронное соединение
     xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // Отправляем кодировку
     xmlhttp.send(parameterString); // Отправляем POST-запрос
@@ -3531,6 +3538,44 @@ var ajaxChat = {
 	},
 	joingroup: function () {
 		ajaxChat.sendMessageWrapper('/joingroup '+this.userName);
+	},
+	updateopenedmsg: function (){
+		winID = document.getElementById('pv_messages_element').getElementsByClassName('winID');
+		for(var i = 0; i < winID.length; i++) {
+					//alert(winID[i].id)
+					uID = winID[i].id;
+					winMsg = document.getElementById(winID[i].id+'_pv_messages').getElementsByClassName('pvMsg_info');
+					//alert(winMsg[winMsg.length-1].id)
+					
+		var requestUrl = this.ajaxURL
+		+ '&lastID='
+		+ this.lastID
+		+ '&upd_private_msg='+winID[i].id
+		+ '&upd_private_msg_u2='+ajaxChat.userName
+		+ '&upd_private_msg_last_msg='+winMsg[winMsg.length-1].id;
+		// alert(winID[i].id+' '+ajaxChat.userName+' '+winMsg[winMsg.length-1].id)
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					document.getElementById(uID+'_pv_messages').innerHTML += xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
+				}
+			  }
+			xmlhttp.open("GET",requestUrl,true);
+			xmlhttp.send();
+					
+					
+					
+					
+			  }
 	},
 	videofunction: function (param) {
 		switch(param) {
