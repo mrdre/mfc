@@ -179,17 +179,38 @@
 			
 			function MousePress(e,t)
 			{
-				PWID = t.getElementsByTagName("div")[1].innerHTML;
-				cursx = e.clientX;
-				cursy = e.clientY;
-				if ((cursx > windx)	&&
-					(cursy > windy)	&&
-					(cursx < windx+200)	&&
-					(cursy < windy+20)	)
+				if (t.getElementsByTagName("div")[1]) 
 				{
-					document.getElementById(PWID).style.cursor = "move";
-					flag = true;
+					PWID = t.getElementsByTagName("div")[1].innerHTML;
+					cursx = e.clientX;
+					cursy = e.clientY;
+					if ((cursx > windx)	&&
+						(cursy > windy)	&&
+						(cursx < windx+200)	&&
+						(cursy < windy+20)	)
+					{
+						document.getElementById(PWID).style.cursor = "move";
+						flag = true;
+					}
+				} 
+				else 
+				{
+					PWID = t.id;
+					cursx = e.clientX;
+					cursy = e.clientY;
+
+					if ((cursx > windx)	&&
+						(cursy > windy)	&&
+						(cursx < windx+1000)	&&
+						(cursy < windy+301+77)	)
+					{
+						document.getElementById(PWID).style.cursor = "move";
+						flag = true;
+					}
 				}
+
+					
+
 			}
 
 			function hook(e) {
@@ -532,7 +553,7 @@
 				<input type="button" title="[LANG]bbCodeTitleColor[/LANG]" onclick="ajaxChat.showHide('colorCodesContainer', null);" class="bth_color"/>
 			</div>
 		
-		<div id="emoticonsContainer" style="display:none;" dir="ltr">
+		<div id="emoticonsContainer" style="display:none; left:227px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
 			
 		
 		</div>
