@@ -387,8 +387,8 @@ var ajaxChat = {
 						+ this.emoticonCodes[i]
 						+ '"/></a>';
 			}
-		if(this.dom['emoticonsContainer']) {
- 			this.updateDOM('emoticonsContainer', this.DOMbuffer);
+		if(this.dom['emoticonsUnderContainer']) {
+ 			this.updateDOM('emoticonsUnderContainer', this.DOMbuffer);
  		}
  		this.DOMbuffer = "";
 	},
@@ -1076,7 +1076,9 @@ var ajaxChat = {
 			var encodedUserName = this.scriptLinkEncode(userName);
 			var str	= '<div id="'
 					+ this.getUserDocumentID(userID)
-					+ '"><img src="img/help.png"/><a href="javascript:ajaxChat.toggleUserMenu(\''
+					+ '"><img src="'
+					+ this.getUserAvatarID(userID)
+					+'"/><a href="javascript:ajaxChat.toggleUserMenu(\''
 					+ this.getUserMenuDocumentID(userID)
 					+ '\', \''
 					+ encodedUserName
@@ -1377,6 +1379,9 @@ var ajaxChat = {
 	
 	getUserDocumentID: function(userID) {
 		return 'ajaxChat_u_'+userID;
+	},
+	getUserAvatarID: function(userID) {
+		return 'img/help.png';
 	},
 	
 	getUserNode: function(userID) {
