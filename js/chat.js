@@ -20,6 +20,7 @@ var ajaxChat = {
 	pv_msg_count: null,
 	show: null,
 	zapmsg: null,
+	avID:null,
 	settingsInitiated: null,
 	styleInitiated: null,
 	initializeFunction: null,
@@ -1074,9 +1075,11 @@ var ajaxChat = {
 			return this.userNodeString;
 		} else {
 			var encodedUserName = this.scriptLinkEncode(userName);
+			var vova = '';
+			//alert (this.getUserAvatarID(userID,function(responseText) { return responseText}));
 			var str	= '<div id="'
 					+ this.getUserDocumentID(userID)
-					+ '"><img src="'
+					+ '"><img src="/images/comprofiler/tn'
 					+ this.getUserAvatarID(userID)
 					+'"/><a href="javascript:ajaxChat.toggleUserMenu(\''
 					+ this.getUserMenuDocumentID(userID)
@@ -1381,7 +1384,29 @@ var ajaxChat = {
 		return 'ajaxChat_u_'+userID;
 	},
 	getUserAvatarID: function(userID) {
-		return 'img/help.png';
+		var requestUrl = this.ajaxURL
+						+ '&lastID='
+						+ this.lastID
+						+ '&getAvatarID='
+						+userID;
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
+			}
+		  }
+		xmlhttp.open("GET",requestUrl,false);
+		xmlhttp.send();
+		return xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
 	},
 	
 	getUserNode: function(userID) {
