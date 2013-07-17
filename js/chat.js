@@ -1108,7 +1108,7 @@ var ajaxChat = {
 			return str;	
 		}
 	},
-
+	
 	toggleUserMenu: function(menuID, userName, userID) {
 		// If the menu is empty, fill it with user node menu items before toggling it. 
 		var isInline = false;
