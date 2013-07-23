@@ -414,7 +414,7 @@ var ajaxChat = {
 	},
 	
 	setStatus: function(currentStatus) {
-		//Make sure the status container div exists before changing its class.
+		//Make sure the status container div exists before changing its class
 		if (document.getElementById('statusIconContainer') != null ) {
 			//currentStatus options are: Off for green, On for orange, and Alert for red.
 			document.getElementById('statusIconContainer').className = 'statusContainer' + currentStatus;
