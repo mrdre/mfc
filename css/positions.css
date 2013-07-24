@@ -730,6 +730,32 @@ padding-right: 0px;
 	bottom:0px;
 	overflow:auto;
 }
+
+#onlineList  img {
+	float: left;
+width: 30px;
+height: 30px;
+border: 1px solid rgb(68, 68, 68)!important;
+border-radius: 6px;
+	
+}
+#onlineList a.user, #onlineList a.admin {
+float: left;
+margin-left: 9px;
+margin-top: 5px;
+font-weight: bold;
+font-size: 17px;
+width: 77%;
+}
+
+#onlineList ul.userMenu {
+	clear: both;
+}
+
+#onlineList .rowEven, #onlineList .rowOdd {
+	clear: both;
+}
+
 #content #onlineListContainer #onlineList div {
 	padding-left:10px;
 	padding-top:2px;
