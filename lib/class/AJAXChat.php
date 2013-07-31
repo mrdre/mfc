@@ -82,6 +82,7 @@ class AJAXChat {
 		$this->_requestVars['pay']			= isset($_REQUEST['pay'])			? $_REQUEST['pay']				: null;
 		$this->_requestVars['tip']			= isset($_REQUEST['tip'])			? $_REQUEST['tip']				: null;
 		$this->_requestVars['tipcomment']	= isset($_REQUEST['tipcomment'])	? $_REQUEST['tipcomment']		: null;
+		$this->_requestVars['initInImages']	= isset($_REQUEST['initInImages'])	? true							: false;
 		$this->_requestVars['privateMsgCount']	= isset($_REQUEST['privateMsgCount'])? $_REQUEST['privateMsgCount']	: null;
 		$this->_requestVars['in_private_msg']	= isset($_REQUEST['in_private_msg'])? $_REQUEST['in_private_msg']	: null;
 		$this->_requestVars['get_private_msg']	= isset($_REQUEST['get_private_msg'])? $_REQUEST['get_private_msg']	: null;
@@ -320,6 +321,9 @@ $this->logout();
 			}
 		if($this->_requestVars['getAvatarID'] !== null) {
 			$this->getAvatarID($this->_requestVars['getAvatarID']);
+			}
+		if($this->_requestVars['initInImages'] == true) {
+			$this->initInImages($this->_requestVars['initInImages']);
 			}
 	}
 
@@ -3669,18 +3673,6 @@ $this->logout();
 		
 		$row = $result->fetch();
 		$result->free();
-		
-		
-		// echo isset($row['unread_sum']) ? $row['unread_sum'] : 0;
-		// $d = date('l jS \of F Y h:i:s A');
-
-// $filename = "./AjaxChatLog.txt";
-
-// $fh = fopen($filename, "a+");
-
-// fwrite($fh, $d." My Ajax Chat log "." фывафыв variable  ".(int)$row['unread_sum']."\r\n\n");
-
-// fclose($fh);
 
 		// if ($row['unread_sum'] > 0){
 			echo (int)$row['unread_sum'];
@@ -3771,6 +3763,78 @@ $this->logout();
 										style="height: 32px;"></textarea></div></div>';
 			print($output_print);
 		$result->free();
+	
+	}
+	function initInImages($iii){
+$array = ('<a href="javascript:ajaxChat.insertText(\'%3Ao)\');"><img src="./img/emoticons/monkey.png" alt=":o)" title=":o)"/></a>'.
+				'<a href="javascript:ajaxChat.insertText(\'%3Ao)\');"><img src="./img/emoticons/monkey.png" alt=":o)" title=":o)"/></a>'.
+				'<a href="javascript:ajaxChat.insertText(\'%3Ao)\');"><img src="./img/emoticons/monkey.png" alt=":o)" title=":o)"/></a>'.
+				'<a href="javascript:ajaxChat.insertText(\'%3Ao)\');"><img src="./img/emoticons/monkey.png" alt=":o)" title=":o)"/></a>'.
+				'<a href="javascript:ajaxChat.insertText(\'%3Ao)\');"><img src="./img/emoticons/monkey.png" alt=":o)" title=":o)"/></a>');
+				print($array);
+
+		//$sql = "SELECT `dateTime`, `userName`, `text` FROM `ajax_chat_messages` WHERE  `userRole` <4 AND `channel` >1 AND `channel` - `userID` <> 1000000000 AND `unread` = 1 and `userName` = '".$name."'";
+		// $sql = "SELECT *
+				// FROM `ajax_chat_messages`
+				// WHERE	`unread` =1
+				// AND `channel` - `userID` <>1000000000
+				// AND `userName` IN ('".$name."' , '".$name2."')
+				// AND `channel` IN (
+					// 1000000000+(select `userID` 
+								// from `ajax_chat_messages` 
+								// where `userName` =('".$name."' ) 
+								// GROUP BY `userID`),
+					// 1000000000+(select `userID` 
+								// from `ajax_chat_messages` 
+								// where `userName` =('".$name2."' ) 
+								// GROUP BY `userID`)
+								// );";
+		// //Create a new SQL query:
+		// $result = $this->db->sqlQuery($sql);
+		// //Stop if an error occurs:
+		// if($result->error()) {
+			// echo $result->getError();
+			// die();
+		// }
+		// $output_print = '<div id="'.$name.'" class="winID"
+							// style="z-index: 9999;
+							// background: #E1EBF2;
+							// position:absolute;
+							// width:200px;
+							// height:200px;
+							// left:500px;
+							// top:120px;
+							// border-top: 20px solid black;
+							// border-top-left-radius: 10px;
+							// border-top-right-radius: 10px;
+							// border-left: 1px solid black;
+							// border-right: 1px solid black;
+							// border-bottom: 1px solid black;"
+							// onmousedown="MousePress(event,this);"><div style="background: url(\'close.png\') no-repeat  52% 53% ;
+									// border-radius: 9px;
+									// width: 13%;
+									// margin-left: 87%;
+									// margin-top: -10%;
+									// height: 10%; " 
+									// onclick="del(this);"></div><div style="
+									// border-radius: 9px;
+									// width: 13%;
+									// color:red;
+									// margin-top: -10%;
+									// height: 10%; " 
+									// onclick="document.getElementById(\''.$name.'\').style.display = \'none\';">'.$name.'</div><div id="'.$name.'_pv_messages" style="overflow: auto; height: 80%;">';
+		// while($row = $result->fetch()) {
+				// $output_print .= "<tr id=\"".$row['id']."\" class=\"pvMsg_info\"><td class=\"pv_dateTime\" style=\"font-size: 0.7em;\">".$row['dateTime']."</td><td id = \"pv_nick1".$row['id']."\" class=\"pv_nick_cl\" style=\"font-style: italic; font-weight: bold; font-size: 1.3em; color: rgb(211, 17, 65);\">".$row['userName']."</td></tr><tr class=\"pvMsg\"><td class=\"pv_msg\" style=\"color: rgb(40, 49, 63); font-style: italic; font-size: 0.8em; padding-left: 36px;\">".substr($row['text'], 9)."</td></tr>";
+			// }
+		// $output_print .= '</div><div><textarea  id="pv_inputField"
+										// rows="1" 
+										// title="Press SHIFT+ENTER" 
+										// onkeypress="ajaxChat.pv_msg_KeyPress(event);" 
+										// onkeyup="ajaxChat.pv_msg_KeyUp(event);"
+										// onclick="clean_unread_msg(this);"
+										// style="height: 32px;"></textarea></div></div>';
+			// print($output_print);
+		// $result->free();
 	
 	}
 	function upd_pv_msg($name,$name2,$lastmsg){

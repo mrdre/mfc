@@ -43,6 +43,7 @@ var ajaxChat = {
 	bbCodeTags: null,
 	colorCodes: null,
 	emoticonCodes: null,
+	insideImagesPathes: null,
 	emoticonFiles: null,
 	soundFiles: null,
 	sounds: null,
@@ -132,6 +133,7 @@ var ajaxChat = {
 		this.bbCodeTags				= config['bbCodeTags'];
 		this.colorCodes				= config['colorCodes'];
 		this.emoticonCodes			= config['emoticonCodes'];
+		this.insideImagesPathes			= config['insideImagesPathes'];
 		this.emoticonFiles			= config['emoticonFiles'];
 		this.soundFiles				= config['soundFiles'];
 		this.sessionName			= config['sessionName'];
@@ -256,6 +258,7 @@ var ajaxChat = {
 		this.initializeDocumentNodes();
 		this.loadPageAttributes();
 		this.initEmoticons();
+		this.initInsideImages();
 		this.initColorCodes();
 		this.initializeSettings();		
 		this.setSelectedStyle();
@@ -392,6 +395,55 @@ var ajaxChat = {
  			this.updateDOM('emoticonsUnderContainer', this.DOMbuffer);
  		}
  		this.DOMbuffer = "";
+	},
+	
+	initInsideImages: function() {
+		// this.DOMbuffer = "";
+		
+
+
+			var requestUrl = this.ajaxURL
+								+ '&lastID='
+								+ this.lastID
+								+ '&initInImages='+'true';
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					//this.updateDOM('imagesContainer',xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->')));
+					document.getElementById("imagesContainer").innerHTML = xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
+				}
+			  }
+			xmlhttp.open("GET",requestUrl,false);
+			xmlhttp.send();
+
+		// for(var i=0; i<this.insideImagesPathes.length; i++) {
+			// //Replace specials characters in emoticon codes:
+			// this.insideImagesPathes[i] = this.encodeSpecialChars(this.insideImagesPathes[i]);
+			// this.DOMbuffer = this.DOMbuffer
+						// + '<a href="javascript:ajaxChat.insertText(\''
+						// + this.scriptLinkEncode(this.insideImagesPathes[i])
+						// + '\');"><img src="'
+						// + this.dirs['emoticons']
+						// + this.emoticonFiles[i]
+						// + '" alt="'
+						// + this.insideImagesPathes[i]
+						// + '" title="'
+						// + this.insideImagesPathes[i]
+						// + '"/></a>';
+			// }
+		// if(this.dom['imagesContainer']) {
+ 			// this.updateDOM('imagesContainer', this.DOMbuffer);
+ 		// }
+ 		// this.DOMbuffer = "";
 	},
 	
 	initColorCodes: function() {

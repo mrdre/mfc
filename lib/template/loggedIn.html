@@ -190,6 +190,7 @@
 						(cursy < windy+20)	)
 					{
 						document.getElementById(PWID).style.cursor = "move";
+						document.getElementById(PWID).style.opacity = "0.4";
 						flag = true;
 					}
 				} 
@@ -205,6 +206,7 @@
 						(cursy < windy+301+77)	)
 					{
 						document.getElementById(PWID).style.cursor = "move";
+						document.getElementById(PWID).style.opacity = "0.4";
 						flag = true;
 					}
 				}
@@ -228,6 +230,7 @@
 				{
 					flag = false;
 					document.getElementById(PWID).style.cursor = "auto";
+					document.getElementById(PWID).style.opacity = "1.0";
 				}
 			}
 			function move(e) {
@@ -549,6 +552,7 @@
 				<input type="button" value="[LANG]bbCodeLabelURL[/LANG]" title="[LANG]bbCodeTitleURL[/LANG]" onclick="ajaxChat.insertBBCode('url');"/>
 				-->
 				<input type="button" title="smiles" onclick="ajaxChat.showHide('emoticonsContainer', null);" class="bth_smiles"/>
+				<input type="button" title="smiles" onclick="ajaxChat.showHide('imagesContainer', null);" class=""/>
 				<input type="button" title="[LANG]bbCodeTitleImg[/LANG]" onclick="ajaxChat.insertBBCode('img');" class="bth_picture"/>
 				<input type="button" title="[LANG]bbCodeTitleColor[/LANG]" onclick="ajaxChat.showHide('colorCodesContainer', null);" class="bth_color"/>
 			</div>
@@ -556,11 +560,13 @@
 		<div id="emoticonsContainer" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
 			<div id="emoticonsUnderContainer"> </div>
 			<label class="text_Smile">Smile</label>
-			<input type="button" value="" class="bth_close_emoticons"/>
+			<input type="button" value="" class="bth_close_emoticons" onclick="ajaxChat.showHide('emoticonsContainer', null);"/>
 			<img class="polosa-emoticons"/>
 			<input type="button" value="" class="bth_More_emoticons"/>
 			<input type="button" value="" class="bth_Submitted_emoticon"/>
 			<input type="button" value="" class="bth_Emoticon_Lookup"/>
+		</div>
+		<div id="imagesContainer" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
 		</div>
 		<div id="textStyleContainer" style="display:none;">
 			<input type="button" title="[LANG]bbCodeTitleBold[/LANG]" onclick="ajaxChat.insertBBCode('b');" class="bold"/>
