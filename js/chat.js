@@ -418,8 +418,8 @@ var ajaxChat = {
 			  {
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{
-					//this.updateDOM('imagesContainer',xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->')));
-					document.getElementById("imagesContainer").innerHTML = xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
+					alert(xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->')))
+					document.getElementById("imagesUnderContainer").innerHTML = xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
 				}
 			  }
 			xmlhttp.open("GET",requestUrl,false);
@@ -1813,7 +1813,7 @@ var ajaxChat = {
 		if(this.dom['messageLengthCounter']) {
 			this.updateDOM(
 				'messageLengthCounter',
-				this.dom['inputField'].value.length	+ '/' + this.messageTextMaxLength,
+				this.dom['inputField'].innerHTML.length	+ '/' + this.messageTextMaxLength,
 				false,
 				true
 			)
@@ -1822,7 +1822,7 @@ var ajaxChat = {
 	
 	sendMessage: function(text) {
 	if (this.userRole != 0){
-		text = text ? text : this.dom['inputField'].value;
+		text = text ? text : this.dom['inputField'].innerHTML;
 		
 		if(!text) {
 			return;
@@ -1836,7 +1836,7 @@ var ajaxChat = {
 							+ this.encodeText(text);
 			this.makeRequest(this.ajaxURL,'POST',message);
 		}
-		this.dom['inputField'].value = '';
+		this.dom['inputField'].innerHTML = '';
 		this.dom['inputField'].focus();
 		this.updateMessageLengthCounter();
 		} else{
@@ -2157,7 +2157,7 @@ var ajaxChat = {
 
 	insertText: function(text, clearInputField) {
 		if(clearInputField) {
-			this.dom['inputField'].value = '';
+			this.dom['inputField'].innerHTML = '';
 		}
 		this.insert(text, '');
 	},
@@ -2198,12 +2198,12 @@ var ajaxChat = {
 			// Insert the tags:
 			var start = this.dom['inputField'].selectionStart;
 			var end = this.dom['inputField'].selectionEnd;
-			var insText = this.dom['inputField'].value.substring(start, end);
-			this.dom['inputField'].value = 	this.dom['inputField'].value.substr(0, start)
+			var insText = this.dom['inputField'].innerHTML.substring(start, end);
+			this.dom['inputField'].innerHTML = 	this.dom['inputField'].innerHTML.substr(0, start)
 											+ startTag
 											+ insText
 											+ endTag
-											+ this.dom['inputField'].value.substr(end);
+											+ this.dom['inputField'].innerHTML.substr(end);
 			// Adjust the cursor position:
 			var pos;
 			if (insText.length == 0) {
@@ -2216,11 +2216,11 @@ var ajaxChat = {
 		}
 		// Other browsers:
 		else {
-			var pos = this.dom['inputField'].value.length;
-			this.dom['inputField'].value = 	this.dom['inputField'].value.substr(0, pos)
+			var pos = this.dom['inputField'].innerHTML.length;
+			this.dom['inputField'].innerHTML = 	this.dom['inputField'].innerHTML.substr(0, pos)
 											+ startTag
 											+ endTag
-											+ this.dom['inputField'].value.substr(pos);
+											+ this.dom['inputField'].innerHTML.substr(pos);
 		}
 	},
 	

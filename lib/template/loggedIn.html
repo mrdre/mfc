@@ -535,7 +535,8 @@
 		<div id="chatList" ></div>
 
 		<div id="inputFieldContainer">
-			<textarea id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></textarea>
+			<!--textarea id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></textarea-->
+			<div contenteditable="true" style="background:red;" id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></div>
 			<input class="bth_textStyleContainer" type="button" value="" title="textstyle" onclick="ajaxChat.showHide('textStyleContainer', null);"/>
 			
 			<div id="submitButtonContainer">
@@ -566,7 +567,10 @@
 			<input type="button" value="" class="bth_Submitted_emoticon"/>
 			<input type="button" value="" class="bth_Emoticon_Lookup"/>
 		</div>
-		<div id="imagesContainer" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
+		<div id="imagesContainer" style="display:none; overflow-y:scroll; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
+		<div id="imagesUnderContainer"></div>
+		<input class="bth_close_emoticons" type="button" value="" onclick="ajaxChat.showHide('imagesContainer', null);"/>;
+
 		</div>
 		<div id="textStyleContainer" style="display:none;">
 			<input type="button" title="[LANG]bbCodeTitleBold[/LANG]" onclick="ajaxChat.insertBBCode('b');" class="bold"/>
