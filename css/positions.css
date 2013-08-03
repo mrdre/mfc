@@ -542,14 +542,35 @@ body
 	left: 15px;
 	overflow-y: visible;
 }
+#content #imagesUnderContainer {
+	width: 93%;
+	background: white;
+	height: 76%;
+	position: relative;
+	top: 15px;
+	left: 15px;
+	overflow-y: visible;
+}
+
 
 #content label.text_test {
 	position: relative;
 }
 
-
-
 #content #emoticonsContainer label.text_Smile {
+	background: #ded7cd;
+	color: #76635c;
+	position: relative;
+	top: -240px;
+	left: 23px;
+	width: 79px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: -3px -2px 3px black;
+}
+
+#content #imagesContainer label.text_Images {
 	background: #ded7cd;
 	color: #76635c;
 	position: relative;
@@ -572,11 +593,31 @@ body
 	border: none;
 }
 
+#content #imagesContainer .bth_close_images {
+	position: relative;
+	top: -242px;
+	left: 517px;
+	width: 17px;
+	height: 17px;
+	background: url('../img/bth_close_emoticons.png') no-repeat;
+	border: none;
+}
+
 
 #content #emoticonsContainer img.polosa-emoticons {
 	position: relative;
 	top: 19px;
 	left: -35px;
+	width: 520px;
+	height: 23px;
+	background: url('../img/polosa-emoticons.jpg') no-repeat;
+	border: none;
+}
+
+#content #imagesContainer img.polosa-emoticons {
+	position: relative;
+	top: -3px;
+	left: 29px;
 	width: 520px;
 	height: 23px;
 	background: url('../img/polosa-emoticons.jpg') no-repeat;
@@ -597,6 +638,21 @@ body
 	background: url('../img/bth_more-emoticons-on.png') no-repeat;
 }
 
+#content #imagesContainer .bth_More_emoticons {
+	position: relative;
+	top: -4px;
+	left: 20px;
+	width: 186px;
+	height: 29px;
+	background: url('../img/bth_more-emoticons-off.png') no-repeat;
+	border: none;
+}
+
+#content #imagesContainer .bth_More_emoticons:hover {
+	background: url('../img/bth_more-emoticons-on.png') no-repeat;
+}
+
+
 #content #emoticonsContainer .bth_Submitted_emoticon {
 	position: relative;
 	top: 20px;
@@ -611,6 +667,21 @@ body
 	background: url('../img/bth_user-submitted-on.png') no-repeat;
 }
 
+#content #imagesContainer .bth_Submitted_emoticon {
+	position: relative;
+	top: -4px;
+	left: 20px;
+	background: url('../img/bth_user-submitted-off.png') no-repeat;
+	width: 187px;
+	height: 29px;
+	border: none;
+}
+
+#content #imagesContainer .bth_Submitted_emoticon:hover {
+	background: url('../img/bth_user-submitted-on.png') no-repeat;
+}
+
+
 #content #emoticonsContainer .bth_Emoticon_Lookup {
 	position: relative;
 	top: 20px;
@@ -624,6 +695,21 @@ body
 #content #emoticonsContainer .bth_Emoticon_Lookup:hover {
 	background: url('../img/bth_emoticon-lookup-on.png') no-repeat;
 }
+
+#content #imagesContainer .bth_Emoticon_Lookup {
+	position: relative;
+	top: -4px;
+	left: 20px;
+	background: url('../img/bth_emoticon-lookup-off.png') no-repeat;
+	width: 187px;
+	height: 29px;
+	border: none;
+}
+
+#content #imagesContainer .bth_Emoticon_Lookup:hover {
+	background: url('../img/bth_emoticon-lookup-on.png') no-repeat;
+}
+
 
 #content #showMoreSmiley {
 	position: absolute;

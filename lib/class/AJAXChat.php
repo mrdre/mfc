@@ -3783,7 +3783,7 @@ $this->logout();
 		}
 		 $output_print = '';
 		while($row = $result->fetch()) {
-				$output_print .= '<a href="javascript:ajaxChat.insertText(\'<img src="http://'.$_SERVER['SERVER_NAME'].''.$row['image'].'"/>\');"><img width = "100px" src="http://'.$_SERVER['SERVER_NAME'].''.$row['image'].'" alt=":o)" title=":o)"/></a>';
+				$output_print .= '<a href="javascript:ajaxChat.insertText(\'[img]http://'.$_SERVER['SERVER_NAME'].''.$row['image'].'[/img]\');"><img width = "100px" src="http://'.$_SERVER['SERVER_NAME'].''.$row['image'].'" alt=":o)" title=":o)"/></a>';
 			}
 		// $output_print .= '</div><div><textarea  id="pv_inputField"
 										// rows="1" 

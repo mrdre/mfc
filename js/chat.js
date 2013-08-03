@@ -418,7 +418,6 @@ var ajaxChat = {
 			  {
 			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 				{
-					alert(xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->')))
 					document.getElementById("imagesUnderContainer").innerHTML = xmlhttp.responseText.substr(0,xmlhttp.responseText.indexOf('<!--error-->'));
 				}
 			  }

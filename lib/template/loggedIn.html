@@ -567,9 +567,20 @@
 			<input type="button" value="" class="bth_Submitted_emoticon"/>
 			<input type="button" value="" class="bth_Emoticon_Lookup"/>
 		</div>
-		<div id="imagesContainer" style="display:none; overflow-y:scroll; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
-		<div id="imagesUnderContainer"></div>
-		<input class="bth_close_emoticons" type="button" value="" onclick="ajaxChat.showHide('imagesContainer', null);"/>;
+		<div id="imagesContainer" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
+			<div id="imagesUnderContainer"></div>
+			<label class="text_Images">Images</label>
+			
+			<input type="button" value="" class="bth_close_images" onclick="ajaxChat.showHide('imagesContainer', null);"/>
+			
+			<img class="polosa-emoticons"/>
+			
+			<input type="button" value="" class="bth_More_emoticons"/>
+			<input type="button" value="" class="bth_Submitted_emoticon"/>
+			<input type="button" value="" class="bth_Emoticon_Lookup"/>
+			
+			
+			<!--<input class="bth_close_emoticons" type="button" value="" onclick="ajaxChat.showHide('imagesContainer', null);"/>; -->
 
 		</div>
 		<div id="textStyleContainer" style="display:none;">
