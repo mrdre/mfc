@@ -3656,6 +3656,133 @@ $this->logout();
 		$result->free();
 		return $row['user_balance'];
 	}
+	function getModelPanel(){
+		$name = @$_SESSION["ajaxChatLoginUserName"];
+		if ($name == 'admin')
+		{
+
+
+			return '<ul id="tabs">
+						<li><a href="#tab1">ChatRoom</a></li>
+						<li><a href="#tab2">Home</a></li>
+						</ul>
+					<ul id="tabcontent">
+					<li id="tab1">';
+		} else
+		{
+			return '';
+		}
+	}
+	function getModelPanelEnd(){
+		$name = @$_SESSION["ajaxChatLoginUserName"];
+		if ($name == 'admin')
+		{
+
+
+			return '</li>
+					<li id="tab2"><div>
+						<div class="pressed" style="left: 232px;"><a href="#tab2">iPod</a></div>
+						<img src="http://ua-mac.org/wp-content/uploads/2011/03/ipod-classic3.jpg" />asdf</div></li>
+					</ul>';
+		} else
+		{
+			return '';
+		}
+	}
+	function getUVPanel(){
+		$name = @$_SESSION["ajaxChatLoginUserName"];
+		if ($name == 'admin')
+		{
+
+
+			return '<td>
+<span id="a_friends_spoiler" class="onner" onclick="showSpoiler(this);">friends</span>
+				<div class="inner" id="m_friend_list" style="display:none;">
+						<tr><td>
+						
+						<span id="a_friends_onl_spoiler" class="onner" onclick="showSpoiler(this);">online friends</span>
+						<div class="inner" id="m_friend_list" style="display:none;">
+							<tr><td>User 1</td><td>(3)</td></tr>
+							<tr><td>User 2</td><td>(5)</td></tr>
+							<tr><td>User 3</td><td>(7)</td></tr>
+						</div>
+						
+						
+						</td><td>(3)</td></tr>
+
+						<tr><td>
+						
+						
+						<span id="a_friends_offl_spoiler" class="onner" onclick="showSpoiler(this);">offline friends</span>
+						<div class="inner" id="m_friend_list" style="display:none;">
+							<tr><td>User 1</td><td>(3)</td></tr>
+							<tr><td>User 2</td><td>(5)</td></tr>
+							<tr><td>User 3</td><td>(7)</td></tr>
+						</div>	
+						
+						</td><td>(5)</td></tr>
+				</div>
+</td>
+<td>
+	<span id="a_menu_spoiler" class="onner" onclick="showSpoiler(this);">friends</span>
+				<div class="inner" id="m_menu_list" style="display:none;">
+						<tr><td>
+						
+						<span id="a_friends_onl_spoiler" class="onner" onclick="showSpoiler(this);">online friends</span>
+						<div class="inner" id="m_friend_list" style="display:none;">
+							<tr><td>User 1</td><td>(3)</td></tr>
+							<tr><td>User 2</td><td>(5)</td></tr>
+							<tr><td>User 3</td><td>(7)</td></tr>
+						</div>
+						
+						
+						</td>
+						<td>
+						<input class="bth_" type="button" value="" onclick="alert(this.class)"/>
+						<input class="bth_" type="button" value="" onclick="alert(this.class)"/>
+						<input class="bth_" type="button" value="" onclick="alert(this.class)"/>
+						
+						</td>
+						</tr>
+
+
+				</div>
+</td>';
+		} else
+		{
+			return '<!--tr>
+						<img id="currenttime" src=""></img-->
+						<!--old trash textarea id="currenttime" rows="1" cols="5">12</textarea-->
+						<!--textarea id="tipssend" rows="1" cols="5">12</textarea>
+						<textarea id="tipscomment" rows="1" cols="5">comment</textarea>
+						<input type="button" id="" value="tip" onclick="ajaxChat.sendtip(document.getElementById(\'tipssend\').value,document.getElementById(\'tipscomment\').value);"/>
+				</tr-->
+				<tr>
+					<input type="button" id="" value="" onclick="" class="bth_volume"/>
+					
+					<input type="button" id="" value="" onclick="ajaxChat.videofunction(\'refresh\')" class="bth_refresh"/>
+					
+					<!-- <input type="button" id="bth_fullscreen" onclick="bth_change(this, \'bth_fullscreen\', \'bth_fullscreen_a\');fscreenon()" class="bth_fullscreen"/> -->
+					<input type="button" id="bth_video" value="" onclick="bth_change(this, \'bth_video\', \'bth_video_a\');ajaxChat.videofunction(\'onoff\')" class="bth_video"/>
+					<input type="button" id="video_hide" value="" onclick="bth_change(this, \'bth_video_hide\', \'bth_video_display\');ajaxChat.videofunction(\'hide\')" class="bth_video_hide"/>
+					<input type="button" id="video_resize" onclick="bth_change(this, \'bth_video_resize\', \'bth_video_resize_full\');resize()" class="bth_video_resize" />
+				</tr>
+				<tr>
+					<input type="button" id="" value="" onclick="ajaxChat.videofunction(\'goprivate\');" class="bth_private"/>
+					<input type="button" id="startgroupbutton" value="" onclick="ajaxChat.videofunction(\'groupStart\');" class="bth_startgroupe"/>
+					<input style="display:none;" type="button" id="joingroupbutton" value="" onclick="ajaxChat.joingroup()" class="bth_joingroupe"/>
+					<!--input type="button" id="" value="quit" onclick="ajaxChat.videofunction(\'quitP\');" /-->
+					
+				</tr>
+				<tr>
+					<input type="button" id="" value="vojar" onclick="ajaxChat.videofunction(\'chVojar\');"/>
+					<div id="main_tokens"></div>
+					<script>CreateTokens([SHOW_CURRENT_COINS/]);</script>
+					<!--input type="button" id="" value="stopvojar" onclick="ajaxChat.stopvojar();"/-->
+					<!--button id="view1fullscreen">Fullscreen</button-->
+				</tr>';
+		}
+	}
 	function privateMsgCount($uname){
 	
 		$sql = "SELECT SUM(`unread`) unread_sum FROM `ajax_chat_messages` WHERE `unread` = 1 and `userName` <> '".$uname."' 
