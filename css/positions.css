@@ -87,23 +87,93 @@
 	top:55px;
 	bottom:150px;
 	overflow:auto;
+
 }
+
+#content ul.css_tabcontent  #chatList {
+position: absolute;
+overflow: auto;
+width: 618px;
+height: 305px;
+//background: red;
+left: -24px;
+}
+
 #content #inputFieldContainer {
 	position:absolute;
 	left:350px;
 	right:20px;
 	bottom:95px;
 	padding-right:4px;
+
 }
+
+#content ul.css_tabs a {
+	padding: 0px 20px;
+border-top: 2px solid #8b7f73;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+border-left: 2px solid #8b7f73;
+border-right: 2px solid #8b7f73;
+color: #817569;
+font-weight: bold;
+
+}
+
+#content ul.css_tabcontent .tab_home {
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+
+#content ul.css_tabcontent {
+	list-style-type: none;
+	border-top: 2px solid #8b7f73;
+	border-bottom: 2px solid #8b7f73;
+}
+
+#content ul.css_tabcontent #inputFieldContainer {
+position: absolute!important;
+left: -24px!important;
+right: 1px!important;
+bottom: 95px!important;
+padding-right: 4px!important;
+top: 368px!important;
+height: 40px!important;
+}
+
+#content td.tbl_left {
+	//width: 150px;
+	//background: green;
+}
+
+#content td.tbl_left span.onner1, #content td.tbl_right span.onner1 {
+color: #847363;
+background: #E6D7C2;
+border: 2px solid #a39685;
+padding: 0px 27px;
+border-radius: 5px;
+font-weight: bold;
+}
+
+#content td.tbl_left span.onner2 {
+color: #4d443f;
+font-weight: bold;
+}
+#content td.tbl_left .inner td {
+color: #584932;
+}
+
+
+
 #content #submitButtonContainer {
-	
-	
 	position: absolute;
-right: 122px;
-bottom: 2px;
-width: 59px;
-text-align: center;
-font-size: 8px;
+	right: 122px;
+	bottom: 2px;
+	width: 59px;
+	text-align: center;
+	font-size: 8px;
 
 }
 

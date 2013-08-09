@@ -3662,11 +3662,11 @@ $this->logout();
 		{
 
 
-			return '<ul id="tabs">
-						<li><a href="#tab1">ChatRoom</a></li>
+			return '<ul id="tabs" class="css_tabs">
 						<li><a href="#tab2">Home</a></li>
+						<li><a href="#tab1">ChatRoom</a></li>
 						</ul>
-					<ul id="tabcontent">
+					<ul id="tabcontent" class="css_tabcontent">
 					<li id="tab1">';
 		} else
 		{
@@ -3680,9 +3680,12 @@ $this->logout();
 
 
 			return '</li>
-					<li id="tab2"><div>
-						<div class="pressed" style="left: 232px;"><a href="#tab2">iPod</a></div>
-						<img src="http://ua-mac.org/wp-content/uploads/2011/03/ipod-classic3.jpg" />asdf</div></li>
+					<li id="tab2">
+					<div class="tab_home"> 
+					What`s new:
+					
+					</div>
+					</li>
 					</ul>';
 		} else
 		{
@@ -3695,12 +3698,12 @@ $this->logout();
 		{
 
 
-			return '<td>
-<span id="a_friends_spoiler" class="onner" onclick="showSpoiler(this);">friends</span>
+			return '<td class="tbl_left">
+<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="ddddd"/>FRIENDS</span>
 				<div class="inner" id="m_friend_list" style="display:none;">
 						<tr><td>
 						
-						<span id="a_friends_onl_spoiler" class="onner" onclick="showSpoiler(this);">online friends</span>
+						<span id="a_friends_onl_spoiler" class="onner2" onclick="showSpoiler(this);">online friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
 							<tr><td>User 1</td><td>(3)</td></tr>
 							<tr><td>User 2</td><td>(5)</td></tr>
@@ -3713,7 +3716,7 @@ $this->logout();
 						<tr><td>
 						
 						
-						<span id="a_friends_offl_spoiler" class="onner" onclick="showSpoiler(this);">offline friends</span>
+						<span id="a_friends_offl_spoiler" class="onner2" onclick="showSpoiler(this);">offline friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
 							<tr><td>User 1</td><td>(3)</td></tr>
 							<tr><td>User 2</td><td>(5)</td></tr>
@@ -3723,8 +3726,8 @@ $this->logout();
 						</td><td>(5)</td></tr>
 				</div>
 </td>
-<td>
-	<span id="a_menu_spoiler" class="onner" onclick="showSpoiler(this);">friends</span>
+<td class="tbl_right">
+	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="ddddd"/>TOKENS</span>
 				<div class="inner" id="m_menu_list" style="display:none;">
 						<tr><td>
 						
