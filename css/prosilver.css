@@ -56,7 +56,7 @@
 		color:#333333;
 	}
 	#content input, #content select, #content textarea {
-		background-color:#FFF;
+		//background-color:#FFF;
 		color:#333333;
 	}
 	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #bbCodeContainer, #content #colorCodesContainer, #content #emoticonsContainer {

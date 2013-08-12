@@ -3698,7 +3698,17 @@ $this->logout();
 		{
 
 
-			return '<br/><td class="tbl_left">
+			return '
+			<br/>
+			<div class="stripe_broadcasting">
+			<input type="button" name="bth_not_broadcasting" class="bth_not_broadcasting" onclick="alert(this.class)"/>
+			<input type="button" name="bth_cam_preview" class="bth_cam_preview" onclick="alert(this.class)"/>
+			</div>
+			<hr/>
+			
+			
+			
+			<br/><td class="tbl_left">
 <span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_friends.png" width="16%"/>FRIENDS</span>
 				<div class="inner" id="m_friend_list" style="display:none;">
 						<tr><td>

@@ -210,6 +210,28 @@ font-weight: bold;
 margin-top: 10px;
 }
 
+.stripe_broadcasting
+{
+background: url('../img/stripe_broadcasting.png');
+width: 244px;
+height: 25px;
+//border: none;
+}
+
+.bth_not_broadcasting {
+background: url('../img/bth_not_broadcasting.png');
+width: 120px;
+height: 22px;
+border: none;
+margin: 3px;
+}
+
+.bth_cam_preview {
+background: url('../img/bth_cam preview.png');
+width: 108px;
+height: 22px;
+border: none;
+}
 
 
 
