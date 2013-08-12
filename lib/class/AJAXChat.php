@@ -3698,12 +3698,12 @@ $this->logout();
 		{
 
 
-			return '<td class="tbl_left">
-<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="ddddd"/>FRIENDS</span>
+			return '<br/><td class="tbl_left">
+<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_friends.png" width="16%"/>FRIENDS</span>
 				<div class="inner" id="m_friend_list" style="display:none;">
 						<tr><td>
 						
-						<span id="a_friends_onl_spoiler" class="onner2" onclick="showSpoiler(this);">online friends</span>
+						<span id="a_friends_onl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" width="16%"/>online friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
 							<tr><td>User 1</td><td>(3)</td></tr>
 							<tr><td>User 2</td><td>(5)</td></tr>
@@ -3716,7 +3716,7 @@ $this->logout();
 						<tr><td>
 						
 						
-						<span id="a_friends_offl_spoiler" class="onner2" onclick="showSpoiler(this);">offline friends</span>
+						<span id="a_friends_offl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" width="16%"/>offline friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
 							<tr><td>User 1</td><td>(3)</td></tr>
 							<tr><td>User 2</td><td>(5)</td></tr>
@@ -3727,28 +3727,20 @@ $this->logout();
 				</div>
 </td>
 <td class="tbl_right">
-	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="ddddd"/>TOKENS</span>
+	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_tokens.png" width="16%"/>TOKENS
+		<input class="bth_admine_refresh" type="button" value="" onclick="alert(this.class)"/>
+		<input class="bth_admine_find" type="button" value="" onclick="alert(this.class)"/>
+		<input class="bth_admine_list" type="button" value="" onclick="alert(this.class)"/>
+	</span>
 				<div class="inner" id="m_menu_list" style="display:none;">
 						<tr><td>
-						
-						<span id="a_friends_onl_spoiler" class="onner" onclick="showSpoiler(this);">online friends</span>
-						<div class="inner" id="m_friend_list" style="display:none;">
-							<tr><td>User 1</td><td>(3)</td></tr>
-							<tr><td>User 2</td><td>(5)</td></tr>
-							<tr><td>User 3</td><td>(7)</td></tr>
-						</div>
-						
-						
-						</td>
-						<td>
-						<input class="bth_" type="button" value="" onclick="alert(this.class)"/>
-						<input class="bth_" type="button" value="" onclick="alert(this.class)"/>
-						<input class="bth_" type="button" value="" onclick="alert(this.class)"/>
-						
-						</td>
-						</tr>
-
-
+						<img src="../chat/img/icon_admine_private.png" width="8%"/>Private ............ 0<br/>
+						<img src="../chat/img/icon_admine_group.png" width="8%"/>Group .............. 0<br/>
+						<img src="../chat/img/icon_admine_spy.png" width="8%"/>Spy ................ 0<br/>
+						<img src="../chat/img/icon_admine_tips.png" width="8%"/>Tips ............... 0<br/>
+						<hr/>
+						<img src="../chat/img/icon_admine_total.png" width="8%"/>Total .............. 0<br/>
+						</td></tr>
 				</div>
 </td>';
 		} else
