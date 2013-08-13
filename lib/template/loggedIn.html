@@ -108,13 +108,11 @@ top: 11px;
     position: relative;
     top: -5px;
     overflow:hidden;
-    height: 420px;
+    height: 440px;
     font-size: 15px;
     border-bottom: solid 1px #d5d5d5;
     border-top: solid 1px #d5d5d5;
-	
 	width: 808px;
-	//background: grey;
 	left: 349px;
 }
 #tabcontent li{
@@ -576,7 +574,7 @@ top: 11px;
 
 		<div id="inputFieldContainer">
 			<!--textarea id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></textarea-->
-			<div contenteditable="true" style="background:red;" id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></div>
+			<div contenteditable="true" style="" id="inputField" rows="1" cols="50" title="[LANG]inputLineBreak[/LANG]" onkeypress="ajaxChat.handleInputFieldKeyPress(event);" onkeyup="ajaxChat.handleInputFieldKeyUp(event);"></div>
 			<input class="bth_textStyleContainer" type="button" value="" title="textstyle" onclick="ajaxChat.showHide('textStyleContainer', null);"/>
 			
 			<div id="submitButtonContainer">
@@ -593,8 +591,8 @@ top: 11px;
 				<input type="button" value="[LANG]bbCodeLabelURL[/LANG]" title="[LANG]bbCodeTitleURL[/LANG]" onclick="ajaxChat.insertBBCode('url');"/>
 				-->
 				<input type="button" title="smiles" onclick="ajaxChat.showHide('emoticonsContainer', null);" class="bth_smiles"/>
-				<input type="button" title="smiles" onclick="ajaxChat.showHide('imagesContainer', null);" class=""/>
-				<input type="button" title="[LANG]bbCodeTitleImg[/LANG]" onclick="ajaxChat.insertBBCode('img');" class="bth_picture"/>
+				<input type="button" title="smiles" onclick="ajaxChat.showHide('imagesContainer', null);" class="bth_picture"/>
+				<!-- <input type="button" title="[LANG]bbCodeTitleImg[/LANG]" onclick="ajaxChat.insertBBCode('img');" class="bth_picture"/> -->
 				<input type="button" title="[LANG]bbCodeTitleColor[/LANG]" onclick="ajaxChat.showHide('colorCodesContainer', null);" class="bth_color"/>
 			</div>
 		

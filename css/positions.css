@@ -66,8 +66,8 @@
 #content #flashContent {
 	position:absolute;
 	left:20px;
-	top:55px;
-	bottom:20px;
+	//top:55px;
+	//bottom:20px;
 	overflow:auto;
 	
 }
@@ -144,15 +144,31 @@ height: 40px!important;
 }
 
 #content td.tbl_left {
-	//width: 150px;
+	width: 50%;
 	//background: green;
+	
+	border-right: 1px solid black;
+	//box-shadow: 0 -10px 10px 2px black;
+	
 }
+
+#content td.tbl_right {
+	width: 49.99%;
+	//background: grey;
+}
+
+#content table.tbl_admine {
+	//background: yellow;
+	width: 316px;
+}
+
 
 #content td.tbl_left span.onner1{
 background: url('../img/stripe.png');
 width: 150px;
 height: 25px;
-padding: 4px 31px;
+//padding: 4px 31px;
+padding: 4px 15px;
 color: #867362;
 font-weight: bold;
 /*
@@ -167,33 +183,42 @@ border-radius: 5px;
 background: url('../img/stripe.png');
 width: 150px;
 height: 25px;
-padding: 4px 1px;
+padding: 4px 53px 4px 2px;
 color: #867362;
 font-weight: bold;
 }
 
-#content td.tbl_right span.onner1 .bth_admine_refresh {
+#content td.tbl_right .bth_admine_refresh {
 background: url('../img/bth_admine_refresh.png');
 width: 12px;
 height: 14px;
 padding: 0px;
 border: none;
+position: relative;
+left: 85px;
+top: -15px;
 }
 
-#content td.tbl_right span.onner1 .bth_admine_find {
+#content td.tbl_right .bth_admine_find {
 background: url('../img/bth_admine_find.png');
 width: 18px;
 height: 14px;
 padding: 0px;
 border: none;
+position: relative;
+left: 81px;
+top: -15px;
 }
 
-#content td.tbl_right span.onner1 .bth_admine_list {
+#content td.tbl_right .bth_admine_list {
 background: url('../img/bth_admine_list.png');
 width: 15px;
 height: 14px;
 padding: 0px;
 border: none;
+position: relative;
+left: 79px;
+top: -15px;
 }
 
 
@@ -237,8 +262,8 @@ border: none;
 
 #content #submitButtonContainer {
 	position: absolute;
-	right: 122px;
-	bottom: 2px;
+	right: 137px;
+	top: 19px;
 	width: 59px;
 	text-align: center;
 	font-size: 8px;
@@ -280,7 +305,7 @@ border: none;
 #content #bbCodeContainer {
 	position: absolute;
 right: 11px;
-bottom: 7px;
+top: 17px;
 padding: 3px;
 border: none!important;
 }
@@ -300,7 +325,7 @@ padding: 11px 1px 1px 7px;
 
 #content #textStyleContainer
 {
-top: 26px;
+top: 34px;
 left: 521px;
 padding: 3px;
 position: absolute;
@@ -315,7 +340,7 @@ padding: 10px 1px 2px 6px;
 .bth_textStyleContainer
 {
 	position: relative;
-	top: -26px;
+	top: -46px;
 	left: 589px;
 	background: url('../img/text_options.png') no-repeat;
 	width: 14px;
@@ -938,11 +963,10 @@ padding-right: 0px;
 	padding-left:5px;
 }
 #content #inputFieldContainer #inputField {
-	width: 75%;
-	height:40px;
-	
-	
-	
+	height: 58px;
+	background: url('../img/messag-pole.jpg');
+	border: none;
+	padding: 5px 205px 2px 8px;
 }
 #content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
 	height: 30px;

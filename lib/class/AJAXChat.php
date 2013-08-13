@@ -3705,43 +3705,35 @@ $this->logout();
 			<input type="button" name="bth_cam_preview" class="bth_cam_preview" onclick="alert(this.class)"/>
 			</div>
 			<hr/>
-			
-			
-			
-			<br/><td class="tbl_left">
-<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_friends.png" width="16%"/>FRIENDS</span>
+			<br/>
+			<table class="tbl_admine">
+			<td class="tbl_left">
+			<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_friends.png" width="25"/>FRIENDS</span>
 				<div class="inner" id="m_friend_list" style="display:none;">
 						<tr><td>
 						
 						<span id="a_friends_onl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" width="16%"/>online friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
-							<tr><td>User 1</td><td>(3)</td></tr>
-							<tr><td>User 2</td><td>(5)</td></tr>
-							<tr><td>User 3</td><td>(7)</td></tr>
+							<tr><td>User 1</td></tr>
+							<tr><td>User 2</td></tr>
+							<tr><td>User 3</td></tr>
 						</div>
-						
-						
 						</td><td>(3)</td></tr>
-
 						<tr><td>
-						
-						
 						<span id="a_friends_offl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" width="16%"/>offline friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
-							<tr><td>User 1</td><td>(3)</td></tr>
-							<tr><td>User 2</td><td>(5)</td></tr>
-							<tr><td>User 3</td><td>(7)</td></tr>
+							<tr><td>User 1</td></tr>
+							<tr><td>User 2</td></tr>
+							<tr><td>User 3</td></tr>
 						</div>	
-						
 						</td><td>(5)</td></tr>
 				</div>
 </td>
 <td class="tbl_right">
-	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_tokens.png" width="16%"/>TOKENS
+	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_tokens.png" width="25"/>TOKENS</span>
 		<input class="bth_admine_refresh" type="button" value="" onclick="alert(this.class)"/>
 		<input class="bth_admine_find" type="button" value="" onclick="alert(this.class)"/>
 		<input class="bth_admine_list" type="button" value="" onclick="alert(this.class)"/>
-	</span>
 				<div class="inner" id="m_menu_list" style="display:none;">
 						<tr><td>
 						<img src="../chat/img/icon_admine_private.png" width="8%"/>Private ............ 0<br/>
@@ -3752,7 +3744,9 @@ $this->logout();
 						<img src="../chat/img/icon_admine_total.png" width="8%"/>Total .............. 0<br/>
 						</td></tr>
 				</div>
-</td>';
+</td>
+</table>
+';
 		} else
 		{
 			return '<!--tr>
