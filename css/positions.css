@@ -237,7 +237,7 @@ top: 72px;
 }
 
 #content ul.css_tabs a {
-	padding: 0px 20px;
+	
 border-top: 2px solid #8b7f73;
 border-top-left-radius: 8px;
 border-top-right-radius: 8px;
@@ -246,7 +246,7 @@ border-right: 2px solid #8b7f73;
 color: #817569;
 font-weight: bold;
 background: #dfd8ce;
-
+padding: 0px 26px;
 }
 
 #content ul.css_tabcontent .tab_home {
@@ -362,29 +362,34 @@ margin-top: 10px;
 }
 
 #content .topic {
-	background: grey;
-	width: 808px;
-	height: 59px;
-	margin-top: 10px;
+
+width: 800px;
+height: 70px;
+
+background: url('../img/stripe_menu.jpg');
 }
 
 #content .topic textarea.topic_text_area {
-	background: red;
-	width: 473px;
-	height: 35px;
+	background: url('../img/stripe_field.jpg');
+	width: 496px;
+	height: 40px;
 	float: left;
 	top: 10px;
 	position: relative;
+	border: none;
+	resize: none;
+	left: 6px;
 }
 
 #content .topic input.bth_settopic {
-	background: red;
-	width: 84px;
-	height: 25px;
-	float: left;
-	position: relative;
-	top: 17px;
-	left: 10px;
+	background: url('../img/topic_save.png');
+width: 55px;
+height: 25px;
+float: left;
+position: relative;
+top: 17px;
+left: 10px;
+border: none;
 }
 
 .stripe_broadcasting

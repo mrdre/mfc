@@ -3670,7 +3670,7 @@ $this->logout();
 					<li id="tab1">
 					<div class="topic">
 						<textarea class="topic_text_area"> </textarea>
-						<input type="button" name="settopit" class="bth_settopic" value="Save"/>
+						<input type="button" name="settopit" class="bth_settopic" value=" "/>
 					
 					</div>
 					
