@@ -65,29 +65,46 @@
 		
 
 #tabs{
-
-	
-	white-space: nowrap;
-font-size: 15px;
-width: 340px;
-position: relative;
-left: 346px;
-top: 11px;
-
+    padding-left: 131px;
+    white-space: nowrap;
+    font-size: 15px;
 }
 #tabcontent .pressed,
 #tabs li{
     position:relative;
     display: inline-block;
+    top:0px;
     z-index: 3;
+    margin: 11px 5px;
+    border: solid 1px lightgrey;
+    padding: 2px;
+    background: white;
+    -webkit-transition:all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 13px;
+    color: #555;
 }
 #tabs li:hover{
-    //top:4px;
+    top:4px;
     color: black;
 }
 #tabcontent .pressed a,
 #tabs li a{
-    
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px;
+    width: 65px;
+    background: -webkit-linear-gradient(65deg,#eee,white, #eee);
+    background: -moz-linear-gradient(65deg,#eee,white, #eee) #eee;
+    background: -ms-linear-gradient(65deg,#eee,white, #eee) #eee;
+    background: -o-linear-gradient(65deg,#eee,white, #eee) #eee;
+    background: linear-gradient(65deg,#eee,white, #eee) #eee;
+    background-color: #eee;
+    font-size: 15px;
 }
 #tabcontent .pressed a,
 #tabs li:hover a{
@@ -106,16 +123,12 @@ top: 11px;
     font-size: 18px;}
 #tabcontent{
     position: relative;
-    top: -5px;
+    top: -55px;
     overflow:hidden;
-    height: 420px;
+    height: 350px;
     font-size: 15px;
     border-bottom: solid 1px #d5d5d5;
     border-top: solid 1px #d5d5d5;
-	
-	width: 808px;
-	//background: grey;
-	left: 349px;
 }
 #tabcontent li{
     position:relative;
@@ -539,9 +552,9 @@ top: 11px;
 			<div></div>
 		<![endif]-->
 		<div id="flashContent" >
-	 		<div class="div1" id="ibox">
-		<!--		<video id="vid_player" class="videoplayer" autoplay="autoplay" controls="controls" tabindex="0" src="http://a21a.pp.ua/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8"> This browser does not support the video tag. </video> -->
-			</div> 
+	 			<!--	<div class="div1" id="ibox">
+		<video id="vid_player" class="videoplayer" autoplay="autoplay" controls="controls" tabindex="0" src="http://a21a.pp.ua/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8"> This browser does not support the video tag. </video> 
+			</div> -->
 			<div id="div_main">
 				<div class="div2" id="box">
 
@@ -607,20 +620,9 @@ top: 11px;
 			<input type="button" value="" class="bth_Submitted_emoticon"/>
 			<input type="button" value="" class="bth_Emoticon_Lookup"/>
 		</div>
-		<div id="imagesContainer" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
-			<div id="imagesUnderContainer"></div>
-			<label class="text_Images">Images</label>
-			
-			<input type="button" value="" class="bth_close_images" onclick="ajaxChat.showHide('imagesContainer', null);"/>
-			
-			<img class="polosa-emoticons"/>
-			
-			<input type="button" value="" class="bth_More_emoticons"/>
-			<input type="button" value="" class="bth_Submitted_emoticon"/>
-			<input type="button" value="" class="bth_Emoticon_Lookup"/>
-			
-			
-			<!--<input class="bth_close_emoticons" type="button" value="" onclick="ajaxChat.showHide('imagesContainer', null);"/>; -->
+		<div id="imagesContainer" style="display:none; overflow-y:scroll; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
+		<div id="imagesUnderContainer"></div>
+		<input class="bth_close_emoticons" type="button" value="" onclick="ajaxChat.showHide('imagesContainer', null);"/>;
 
 		</div>
 		<div id="textStyleContainer" style="display:none;">

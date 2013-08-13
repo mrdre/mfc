@@ -3400,7 +3400,7 @@ var ajaxChat = {
 	document.getElementById("box").innerHTML = "<img src=\"53.jpg\" width=\"320\" height=\"240\" alt=\"lorem\"/>";
 	},	
 	greenshirma: function(tipvalue){
-	document.getElementById("ibox").innerHTML = "<img src=\"53.jpg\" width=\"320\" height=\"240\" alt=\"lorem\"/>";
+	//document.getElementById("ibox").innerHTML = "<img src=\"53.jpg\" width=\"320\" height=\"240\" alt=\"lorem\"/>";
 	document.getElementById("box").innerHTML = "<img src=\"53.jpg\" width=\"320\" height=\"240\" alt=\"lorem\"/>";
 	},
 	blackshirma: function(tipvalue){
@@ -3413,7 +3413,7 @@ var ajaxChat = {
 		 {
 			  document.getElementById("box").innerHTML = "<object width='99%' height='100%'><param name='movie' value='h265_encoder.swf'/><param name='quality' value='high'/><param name='scale' value='maintainaspectratio'/><param name='allowFullScreen' value='true'/><embed src='h265_encoder.swf' width='99%' height='100%' scale='maintainaspectratio' allowFullScreen='true'  quality='high' pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash'></embed></object><img id='grid_img' src=\"grip.png\" width='1%' height='100%' alt='>' onmousedown='hook(event)'></img>";
 		 }
-		document.getElementById("ibox").innerHTML = "<video id=\"vid_player\" class=\"videoplayer\" autoplay=\"autoplay\" controls=\"controls\" tabindex=\"0\" src=\"http://a21a.pp.ua/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8\"> This browser does not support the video tag. </video>";
+		//document.getElementById("ibox").innerHTML = "<video id=\"vid_player\" class=\"videoplayer\" autoplay=\"autoplay\" controls=\"controls\" tabindex=\"0\" src=\"http://a21a.pp.ua/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8\"> This browser does not support the video tag. </video>";
 		ajaxChat.show = false;
 		}
 	},
