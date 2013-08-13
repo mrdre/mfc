@@ -72,7 +72,7 @@ font-size: 15px;
 width: 340px;
 position: relative;
 left: 346px;
-top: 11px;
+top: -35px;
 
 }
 #tabcontent .pressed,
@@ -105,15 +105,13 @@ top: 11px;
     width: 75px;
     font-size: 18px;}
 #tabcontent{
-    position: relative;
-    top: -5px;
-    overflow:hidden;
-    height: 440px;
     font-size: 15px;
-    border-bottom: solid 1px #d5d5d5;
-    border-top: solid 1px #d5d5d5;
-	width: 808px;
-	left: 349px;
+    height: 440px;
+    left: 329px;
+    overflow: hidden;
+    position: relative;
+    top: -49px;
+    width: 809px;
 }
 #tabcontent li{
     position:relative;
@@ -516,11 +514,29 @@ top: 11px;
 </div>
 
 	<div id="content">
-	
+		<div class="linetop"></div>
+		<div class="insomnia_background">
+			<div class="logolabel">
+				<div class="model">INSOMNIYA4YOU</div>
+				<div class="status">VIPMODEL</div>
+			</div>
+			<div class="logoutmenu">
+				  <div class="linelogout"></div>
+				  <div class="logout_background">
+					<div >Hello: </div>
+					<div>You have tokens</div>
+				  </div>
+				  <a href="/valwindow"><div class="bthbuytokens"></div></a>
+				  
+				  <input type="button" id="logoutButton" value="" onclick="ajaxChat.logout();" class="bthlogout"/>
+				  <a href="/messages"><div class="logout_e-mail"></div></a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
 		<!--div id="headlineContainer">
 			<h1>[LANG]title[/LANG]</h1>
 		</div-->
-		<input type="button" id="logoutButton" value="[LANG]logout[/LANG]" onclick="ajaxChat.logout();" class="bth_logout"/>
+		
 		<div id="current_coins">
 		</div>
 		<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>

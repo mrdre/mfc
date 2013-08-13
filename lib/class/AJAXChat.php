@@ -3667,7 +3667,15 @@ $this->logout();
 						<li><a href="#tab1">ChatRoom</a></li>
 						</ul>
 					<ul id="tabcontent" class="css_tabcontent">
-					<li id="tab1">';
+					<li id="tab1">
+					<div class="topic">
+						<textarea class="topic_text_area"> </textarea>
+						<input type="button" name="settopit" class="bth_settopic" value="Save"/>
+					
+					</div>
+					
+					
+					';
 		} else
 		{
 			return '';

@@ -10,6 +10,135 @@
 /*
  * Positioning
  */
+ 
+ 
+#content .clearfix
+{
+	clear: both;
+
+}
+ 
+#content .linetop 
+{
+    background: url('../img/line-top.png') repeat-x;
+    width: 100%;
+    height: 11px;
+}
+
+
+#content .insomnia_background
+{
+    background: url('../img/fonline-top.png') no-repeat;
+    width: 1190px;
+    height: 77px;
+}
+
+
+#content .logoutmenu
+{
+    
+    float: right;
+    height: 61px;
+    margin-top: 5px;
+    width: 187px;
+  
+}
+
+
+#content  .linelogout
+{
+    background: url('../img/line-loguot.png') no-repeat;
+    width: 4px;
+    height: 60px;
+     float: left;
+}
+
+#content  .bthlogout
+{
+  background: url("../img/bthlogout.png") no-repeat scroll 0 0 transparent;
+    height: 40px;
+    left: 145px;
+    position: relative;
+    top: -37px;
+    width: 39px;
+	border: none;
+}
+
+#content  .bthbuytokens
+{
+    background: url('../img/ByMoreTok-on.png') no-repeat;
+    width: 105px;
+    height: 29px;
+    position: relative;
+    left: 5px;
+    top: 0px; 
+}
+
+#content  .bthbuytokens:hover
+{
+    background: url('../img/ByMoreTok-off.png') no-repeat;
+    
+    
+}
+
+
+#content  .logout_background
+{
+    background: url('../img/logout_background.png') no-repeat;
+    width: 180px;
+    height: 33px;
+    position: relative;
+    left: 5px;
+    top: 0px; 
+	font-size: 12px;
+	color: brown;
+}
+
+
+
+
+#content  .logout_e-mail
+{
+ background: url("../img/logout_e-mail.png") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    left: 111px;
+    position: relative;
+    top: -63px;
+    width: 28px;
+}
+
+#content .logolabel
+{
+
+    float: left;
+    height: 62px;
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 355px;
+  
+}
+
+
+#content .logolabel .model
+{
+	color: white;
+	font-size: 34px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px grey;
+}
+
+#content  .logolabel .status
+{
+	color: #646c54;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+
+
+ 
+ 
 
 #loginContent {
 	position:absolute;
@@ -64,11 +193,10 @@
 	//visibility: hidden;
 }
 #content #flashContent {
-	position:absolute;
-	left:20px;
-	//top:55px;
-	//bottom:20px;
-	overflow:auto;
+	position: absolute;
+
+	overflow: auto;
+	//top: 26px;
 	
 }
 #content #statusIconContainer {
@@ -84,7 +212,7 @@
 	position:absolute;
 	left:350px;
 	right:230px;
-	top:55px;
+	top:116px;
 	bottom:150px;
 	overflow:auto;
 
@@ -103,7 +231,7 @@ left: -24px;
 	position:absolute;
 	left:350px;
 	right:20px;
-	bottom:95px;
+	bottom:56px;
 	padding-right:4px;
 
 }
@@ -117,6 +245,7 @@ border-left: 2px solid #8b7f73;
 border-right: 2px solid #8b7f73;
 color: #817569;
 font-weight: bold;
+background: #dfd8ce;
 
 }
 
@@ -129,8 +258,6 @@ font-weight: bold;
 
 #content ul.css_tabcontent {
 	list-style-type: none;
-	border-top: 2px solid #8b7f73;
-	border-bottom: 2px solid #8b7f73;
 }
 
 #content ul.css_tabcontent #inputFieldContainer {
@@ -235,6 +362,31 @@ font-weight: bold;
 margin-top: 10px;
 }
 
+#content .topic {
+	background: grey;
+	width: 808px;
+	height: 59px;
+}
+
+#content .topic textarea.topic_text_area {
+	background: red;
+	width: 473px;
+	height: 35px;
+	float: left;
+	top: 10px;
+	position: relative;
+}
+
+#content .topic input.bth_settopic {
+	background: red;
+	width: 84px;
+	height: 25px;
+	float: left;
+	position: relative;
+	top: 17px;
+	left: 10px;
+}
+
 .stripe_broadcasting
 {
 background: url('../img/stripe_broadcasting.png');
@@ -284,7 +436,7 @@ border: none;
 #content #onlineListContainer {
 	position:absolute;
 	right:20px;
-	top:55px;
+	top: 124px;
 	width:200px;
 	bottom:150px;
 }
@@ -298,7 +450,7 @@ border: none;
 #content #settingsContainer {
 	position:absolute;
 	right:20px;
-	top:85px;
+	top:123px;
 	width:360px;
 	bottom:150px;
 }
@@ -554,7 +706,7 @@ padding: 10px 1px 2px 6px;
 #audioButton
 {
 	position: absolute;
-	top: 18px;
+	top: 93px;
 	right: 245px;
 	width: 58px;
 	height: 22px;
@@ -565,6 +717,7 @@ padding: 10px 1px 2px 6px;
 	background:url('../img/audio_on.jpg') no-repeat;
 	width: 58px;
 	height: 22px;
+	top: 93px;
 }
 
 
@@ -900,7 +1053,7 @@ body
 
 #content #optionsContainer {
 position: absolute;
-top: 18px;
+top: 95px;
 right: 20px;
 padding: 3px;
 padding-right: 0px;
@@ -981,7 +1134,7 @@ padding-right: 0px;
 	position:absolute;
 	left:0px;
 	right:0px;
-	top:25px;
+	top: 34px;
 	bottom:0px;
 	overflow:auto;
 }
