@@ -222,9 +222,9 @@
 position: absolute;
 overflow: auto;
 width: 618px;
-height: 305px;
-//background: red;
+height: 292px;
 left: -24px;
+top: 72px;
 }
 
 #content #inputFieldContainer {
@@ -294,8 +294,7 @@ height: 40px!important;
 background: url('../img/stripe.png');
 width: 150px;
 height: 25px;
-//padding: 4px 31px;
-padding: 4px 15px;
+padding: 4px 31px;
 color: #867362;
 font-weight: bold;
 /*
@@ -366,6 +365,7 @@ margin-top: 10px;
 	background: grey;
 	width: 808px;
 	height: 59px;
+	margin-top: 10px;
 }
 
 #content .topic textarea.topic_text_area {
