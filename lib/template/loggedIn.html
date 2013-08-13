@@ -505,6 +505,21 @@ top: -41px;
 				{ img = 'images/number_9.png';}
 				return img;
 			}
+			
+			function refresh_stats()
+			{
+			var x;
+			var r=confirm("Press a button!");
+			if (r==true)
+			  {
+			  x="You pressed OK!";
+			  }
+			else
+			  {
+			  x="You pressed Cancel!";
+			  }
+			document.getElementById("demo").innerHTML=x;
+			}
 		// ]]>
 	</script>
 	
