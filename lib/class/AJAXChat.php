@@ -3671,12 +3671,24 @@ $this->logout();
 					<div class="topic">
 						<textarea class="topic_text_area"> </textarea>
 						<input type="button" name="settopit" class="bth_settopic" value=" "/>
-					
 					</div>
 					<div class="mute_basic_guest">
 						<img src="../chat/img/bth_admine_mute.png" width="16" />Mute Basics
 						<br/>
 						<img src="../chat/img/bth_admine_mute_guest.png" width="16" />Mute Guests
+					</div>
+					<div class="users_watching">
+						<img src="../chat/img/icon_admine_group.png" width="24" />Users watching you
+						<img src="../chat/img/tips_arrow_up.png" width="8" />
+						<br/>
+						<a href="#"><img src="../chat/img/icon_1.png" width="14" />Instructions for Model Web Broadcaster</a><br/>
+						<a href="#"><img src="../chat/img/icon_2.png" width="14" />My Account</a><br/>
+						<a href="#"><img src="../chat/img/icon_3.png" width="14" />My Profile</a><br/>
+						<a href="#"><img src="../chat/img/icon_4.png" width="14" />Token Stats</a><br/>
+						<a href="#"><img src="../chat/img/icon_5.png" width="14" />MFC Mail</a><br/>
+						<a href="#"><img src="../chat/img/icon_6.png" width="14" />Rules and Instructions</a><br/>
+						<a href="#"><img src="../chat/img/icon_7.png" width="14" />Technical Support</a><br/>
+						
 					</div>
 					
 					

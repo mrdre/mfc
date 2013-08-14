@@ -404,6 +404,25 @@ border: none;
 	font-weight: bold;
 }
 
+#content .users_watching {
+	position: relative;
+	top: -29px;
+	left: 619px;
+	z-index: 1;
+	width: 177px;
+	height: 100px;
+		color: #4c453d;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#content .users_watching  a {
+	color: #4c453d;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
 
 
 
