@@ -3739,9 +3739,9 @@ $this->logout();
 </td>
 <td class="tbl_right">
 	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_tokens.png" width="25"/>TOKENS</span>
-		<input class="bth_admine_refresh" type="button" value="" onclick="refresh_stats()"/>
-		<input class="bth_admine_find" type="button" value="" onclick="alert(this.class)"/>
-		<input class="bth_admine_list" type="button" value="" onclick="alert(this.class)"/>
+		<input class="bth_admine_refresh" type="button" value="" onclick="ajaxChat.showHide(\'refresh_stats_Container\', null);"/>
+		<input class="bth_admine_find" type="button" value="" onclick="ajaxChat.showHide(\'statistic_stats_Container\', null);"/>
+		<input class="bth_admine_list" type="button" value="" onclick="ajaxChat.showHide(\'chart_stats_Container\', null);"/>
 				<div class="inner" id="m_menu_list" style="display:none;">
 						<tr><td>
 						<img src="../chat/img/icon_admine_private.png" width="8%"/>Private ............ 0<br/>

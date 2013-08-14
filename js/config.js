@@ -44,6 +44,12 @@ var ajaxChatConfig = {
 		styleSelection: 'styleSelection',
 		// The ID of the emoticons container:
 		emoticonsContainer: 'emoticonsContainer',
+		// The ID of the emoticons container:
+		refresh_stats_Container: 'refresh_stats_Container',
+		// The ID of the emoticons container:
+		statistic_stats_Container: 'statistic_stats_Container',
+		// The ID of the emoticons container:
+		chart_stats_Container: 'chart_stats_Container',
 		// The ID of the images container:
 		imagesContainer: 'imagesContainer',
 		// The ID of the in emoticons container:
