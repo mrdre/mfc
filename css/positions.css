@@ -840,7 +840,39 @@ body
 }
 
 
-
+#content #refresh_stats_Container {
+	position: absolute;
+	padding: 3px;
+	width: 596px;
+	background: #ded7cd;
+	height: 289px;
+	z-index:9999;
+	border-width: 20px 1px 1px;
+	border-style: solid;
+	border-color: #76635c;
+}
+#content #statistic_stats_Container {
+	position: absolute;
+	padding: 3px;
+	width: 596px;
+	background: #ded7cd;
+	height: 289px;
+	z-index:9999;
+	border-width: 20px 1px 1px;
+	border-style: solid;
+	border-color: #76635c;
+}
+#content #chart_stats_Container {
+	position: absolute;
+	padding: 3px;
+	width: 596px;
+	background: #ded7cd;
+	height: 289px;
+	z-index:9999;
+	border-width: 20px 1px 1px;
+	border-style: solid;
+	border-color: #76635c;
+}
 
 
 #content #emoticonsContainer {
