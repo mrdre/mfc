@@ -3673,12 +3673,10 @@ $this->logout();
 						<input type="button" name="settopit" class="bth_settopic" value=" "/>
 					
 					</div>
-					
 					<div class="mute_basic_guest">
-						<img src="../img/bth_admine_mute.png"/>
-					
-					
-					
+						<img src="../chat/img/bth_admine_mute.png" width="16" />Mute Basics
+						<br/>
+						<img src="../chat/img/bth_admine_mute_guest.png" width="16" />Mute Guests
 					</div>
 					
 					
@@ -3751,12 +3749,14 @@ $this->logout();
 		<input class="bth_admine_list" type="button" value="" onclick="ajaxChat.showHide(\'chart_stats_Container\', null);"/>
 				<div class="inner" id="m_menu_list" style="display:none;">
 						<tr><td>
-						<img src="../chat/img/icon_admine_private.png" width="8%"/>Private ............ 0<br/>
-						<img src="../chat/img/icon_admine_group.png" width="8%"/>Group .............. 0<br/>
-						<img src="../chat/img/icon_admine_spy.png" width="8%"/>Spy ................ 0<br/>
-						<img src="../chat/img/icon_admine_tips.png" width="8%"/>Tips ............... 0<br/>
+						<table>
+						<tr><td><img src="../chat/img/icon_admine_private.png" width="8%"/>Private .... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_group.png" width="8%"/>Group ..... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_spy.png" width="8%"/>Spy ..... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_tips.png" width="8%"/>Tips ....... </td><td>0</td></tr>
 						<hr/>
-						<img src="../chat/img/icon_admine_total.png" width="8%"/>Total .............. 0<br/>
+						<tr><td><img src="../chat/img/icon_admine_total.png" width="8%"/>Total ....... </td><td>0</td></tr>
+						</table>
 						</td></tr>
 				</div>
 </td>
