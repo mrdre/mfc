@@ -392,6 +392,18 @@ left: 10px;
 border: none;
 }
 
+#content .mute_basic_guest {
+	position: relative;
+	top: -62px;
+	left: 622px;
+	background: red;
+	z-index: 1;
+	width: 169px;
+	height: 50px;
+}
+
+
+
 .stripe_broadcasting
 {
 background: url('../img/stripe_broadcasting.png');

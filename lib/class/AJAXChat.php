@@ -3674,6 +3674,13 @@ $this->logout();
 					
 					</div>
 					
+					<div class="mute_basic_guest">
+						<img src="../img/bth_admine_mute.png"/>
+					
+					
+					
+					</div>
+					
 					
 					';
 		} else
