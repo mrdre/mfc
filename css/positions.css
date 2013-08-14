@@ -846,30 +846,259 @@ body
 
 #content #refresh_stats_Container {
 	position: absolute;
-	padding: 3px;
-	width: 596px;
-	background: #ded7cd;
-	height: 289px;
+	//padding: 3px;
+	//width: 596px;
+	//background: #ded7cd;
+	//height: 289px;
 	z-index:9999;
-	border-width: 20px 1px 1px;
-	border-style: solid;
-	border-color: #76635c;
+	//border-width: 20px 1px 1px;
+	//border-style: solid;
+	//border-color: #76635c;
+	background: url('../img/fon_refresh.png');
+	width: 478px;
+	height: 134px;
 }
+
+#content #refresh_stats_Container .text_refresh {
+	color: #4c453d;
+	font-weight: bold;
+	position: relative;
+	top: 7px;
+	left: 10px;
+}
+
+#content #refresh_stats_Container .text_reset {
+	font-weight: bold;
+	position: relative;
+	top: 18px;
+	left: 10px;
+	width: 458px;
+	color: #867362;
+}
+
+#content #refresh_stats_Container  .bth_refresh_yes {
+	background: url('../img/bth_refresh_yes.png');
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 123px;
+	height: 29px;
+	border: none;
+}
+
+#content #refresh_stats_Container  .bth_refresh_no {
+	background: url('../img/bth_refresh_no.png');
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 123px;
+	height: 28px;
+	border: none;
+
+}
+
+
 #content #statistic_stats_Container {
 	position: absolute;
 	padding: 3px;
-	width: 596px;
+	width: 694px;
 	background: #ded7cd;
-	height: 289px;
+	height: 388px;
 	z-index:9999;
 	border-width: 20px 1px 1px;
 	border-style: solid;
 	border-color: #76635c;
 }
+
+#content #statistic_stats_Container  .text_history {
+	background: #ded7cd;
+	color: #76635c;
+	position: relative;
+	top: -20px;
+	left: 23px;
+	width: 79px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: -3px -2px 3px black;
+}
+
+#content #statistic_stats_Container  .text_history_chart {
+	background: url('../img/history_chart.jpg');
+	width: 647px;
+	height: 279px;
+	position: relative;
+	top: -14px;
+	left: 10px;
+}
+
+#content #statistic_stats_Container .bth_close_statistic {
+	position: relative;
+	top: -21px;
+	left: 557px;
+	width: 17px;
+	height: 17px;
+	background: url('../img/bth_close_emoticons.png') no-repeat;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_text1 {
+	color: #76635c;
+	position: relative;
+	top: 0px;
+	left: 23px;
+	width: 212px;
+	height: 20px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#content #statistic_stats_Container  .text_history_text2 {
+	color: #76635c;
+	position: relative;
+	top: -20px;
+	left: 459px;
+	width: 212px;
+	height: 20px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#content #statistic_stats_Container  .text_history_legend {
+	background: url('../img/history_legend.jpg');
+	width: 320px;
+	height: 27px;
+	position: relative;
+	top: -21px;
+	left: 10px;
+}
+
+#content #statistic_stats_Container  .text_history_niz {
+	background: url('../img/history_niz.jpg');
+	width: 700px;
+	height: 46px;
+	position: relative;
+	top: -20px;
+	left: -3px;
+}
+
+#content #statistic_stats_Container  .text_history_niz  .bth_history_first {
+	background: url('../img/bth_history_first.png') no-repeat;
+	width: 13px;
+	height: 9px;
+	position: relative;
+	top: 8px;
+	left: 13px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz  .bth_history_prev {
+	background: url('../img/bth_history_prev.png') no-repeat;
+	width: 7px;
+	height: 9px;
+	position: relative;
+	top: 8px;
+	left: 13px;
+	border: none;
+}
+
+
+#content #statistic_stats_Container  .text_history_niz  .text_history_line1 {
+	background: url('../img/hystory_line.jpg') no-repeat;
+	width: 3px;
+	height: 26px;
+	position: relative;
+	top: -10px;
+	left: 53px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz   .text_history_page {
+	position: relative;
+	top: -34px;
+	left: 63px;
+	color: #76635c;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#content #statistic_stats_Container  .text_history_niz   .history_field  {
+	background: url('../img/hystory_field.jpg') no-repeat;
+	width: 44px;
+	height: 26px;
+	position: relative;
+	top: -37px;
+	left: 63px;
+	color: #76635c;
+	font-weight: bold;
+	font-size: 12px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz   .text_history_page1 {
+	position: relative;
+	top: -34px;
+	left: 63px;
+	color: #76635c;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#content #statistic_stats_Container  .text_history_niz  .text_history_line2 {
+	background: url('../img/hystory_line.jpg') no-repeat;
+	width: 3px;
+	height: 26px;
+	position: relative;
+	top: -64px;
+	left: 196px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz  .bth_history_next {
+	background: url('../img/bth_history_next.png') no-repeat;
+	width: 7px;
+	height: 9px;
+	position: relative;
+	top: -90px;
+	left: 212px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz  .bth_history_last {
+	background: url('../img/bth_history_last.png') no-repeat;
+	width: 13px;
+	height: 9px;
+	position: relative;
+	top: -90px;
+	left: 207px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz  .bth_hystory_refresh {
+	background: url('../img/bth_hystory_refresh.png') no-repeat;
+	width: 13px;
+	height: 15px;
+	position: relative;
+	top: -87px;
+	left: 220px;
+	border: none;
+}
+
+#content #statistic_stats_Container  .text_history_niz   .text_history_page3 {
+	position: relative;
+	top: -86px;
+	left: 460px;
+	color: #76635c;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+
 #content #chart_stats_Container {
 	position: absolute;
 	padding: 3px;
-	width: 596px;
+	width: 695px;
 	background: #ded7cd;
 	height: 289px;
 	z-index:9999;
@@ -877,6 +1106,129 @@ body
 	border-style: solid;
 	border-color: #76635c;
 }
+
+#content #chart_stats_Container  .text_tips {
+	background: #ded7cd;
+	color: #76635c;
+	position: relative;
+	top: -20px;
+	left: 23px;
+	width: 79px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: -3px -2px 3px black;
+}
+
+#content #chart_stats_Container .bth_close_tips {
+	position: relative;
+	top: -21px;
+	left: 555px;
+	width: 17px;
+	height: 17px;
+	background: url('../img/bth_close_emoticons.png') no-repeat;
+	border: none;
+}
+
+#content #chart_stats_Container .text_tips_menu {
+	position: relative;
+	top: -22px;
+	left: -3px;
+	width: 700px;
+	height: 54px;
+	background: url('../img/tips_menu.png') no-repeat;
+	border: none;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_time {
+	position: relative;
+	top: 17px;
+	left: 12px;
+	width: 19px;
+	height: 19px;
+	background: url('../img/tips_time.png') no-repeat;
+	border: none;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_lab1 {
+	position: relative;
+	top: -2px;
+	left: 40px;
+	color: #76635c;
+	font-size: 13px;
+}
+
+#content #chart_stats_Container .text_tips_menu  .bth_tips_arrow_up {
+	position: relative;
+	top: -3px;
+	left: 51px;
+	color: #76635c;
+	font-size: 13px;
+	background: url('../img/tips_arrow_up.png') no-repeat;
+	width: 8px;
+	height: 8px;
+	border: none;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_member {
+	position: relative;
+	top: -24px;
+	left: 128px;
+	background: url('../img/tips_member.png') no-repeat;
+	width: 13px;
+	height: 25px;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_lab2 {
+	position: relative;
+	top: -44px;
+	left: 145px;
+	color: #76635c;
+	font-size: 13px;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_amount {
+	position: relative;
+	top: -63px;
+	left: 212px;
+	background: url('../img/tips_amount.png') no-repeat;
+	width: 21px;
+	height: 21px;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_lab3 {
+	position: relative;
+	top: -83px;
+	left: 240px;
+	color: #76635c;
+	font-size: 13px;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_note {
+	position: relative;
+	top: -102px;
+	left: 311px;
+	background: url('../img/tips_note.png') no-repeat;
+	width: 21px;
+	height: 22px;
+}
+
+#content #chart_stats_Container .text_tips_menu  .text_tips_lab4 {
+	position: relative;
+	top: -123px;
+	left: 340px;
+	color: #76635c;
+	font-size: 13px;
+}
+
+#content #chart_stats_Container .text_tips_lab5 {
+	position: relative;
+	top: 0px;
+	left: 211px;
+	color: #76635c;
+	font-size: 13px;
+}
+
 
 
 #content #emoticonsContainer {
@@ -1078,6 +1430,9 @@ body
 #content #imagesContainer .bth_Emoticon_Lookup:hover {
 	background: url('../img/bth_emoticon-lookup-on.png') no-repeat;
 }
+
+
+
 
 
 #content #showMoreSmiley {

@@ -646,13 +646,53 @@ top: -41px;
 			<input type="button" value="" class="bth_Emoticon_Lookup"/>
 		</div>		
 		<div id="refresh_stats_Container" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
-asdfasdfasdf
+			<label class="text_refresh">Clear token counters?</label>
+			<div class="text_reset">Reset your tokens to all zeros?<br/>(You don`t lose any tokens! This just reset the earning displayed in your browser.)</div>
+			<input type="button" name="bth_refresh_yes" class="bth_refresh_yes"/>
+			<input type="button" name="bth_refresh_no" class="bth_refresh_no"/>
 		</div>		
-		<div id="statistic_stats_Container" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
-asdfasdfasdf
+		<div id="statistic_stats_Container" style="display:none; left:1px; top:-365px " dir="ltr" onmousedown="MousePress(event,this);">
+			<label class="text_history">Token history</label>
+			<input type="button" value="" class="bth_close_statistic" onclick="ajaxChat.showHide('statistic_stats_Container', null);"/>
+			<div class="text_history_chart"></div>
+			<div class="text_history_text1">Apr 1-15:0 tokens earned</div>
+			<div class="text_history_text2">Apr 16-30:0 tokens earned</div>
+			<div class="text_history_legend"></div>
+			<div class="text_history_niz">
+				<input type="button" name="bth_history_first" class="bth_history_first"/>
+				<input type="button" name="bth_history_prev" class="bth_history_prev"/>
+				<div class="text_history_line1"></div>
+				<label class="text_history_page">Page:</label>
+				<input type="text" name="history_field" class="history_field"/> 
+				<label class="text_history_page1">of 10</label>
+				<div class="text_history_line2"></div>
+				<input type="button" name="bth_history_next" class="bth_history_next"/>
+				<input type="button" name="bth_history_last" class="bth_history_last"/>
+				<input type="button" name="bth_hystory_refresh" class="bth_hystory_refresh"/>
+				<label class="text_history_page3">Displaying months 2 of 10</label>
+			</div>
 		</div>		
 		<div id="chart_stats_Container" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
-asdfasdfasdf
+			<label class="text_tips">Tips Received</label>
+			<input type="button" value="" class="bth_close_tips" onclick="ajaxChat.showHide('chart_stats_Container', null);"/>
+			<div class="text_tips_menu">
+				<div class="text_tips_time"></div>
+				<label class="text_tips_lab1">Time</label>
+				<input type="button" name="bth_tips_arrow_up" class="bth_tips_arrow_up"/>
+				<div class="text_tips_member"></div>
+				<label class="text_tips_lab2">Member</label>
+				<div class="text_tips_amount"></div>
+				<label class="text_tips_lab3">Amount</label>
+				<div class="text_tips_note"></div>
+				<label class="text_tips_lab4">Note</label>
+			</div>
+			<label class="text_tips_lab5">You haven`t received any tips this session.</label>
+			
+			
+			
+			
+			
+			
 		</div>
 		<div id="imagesContainer" style="display:none; left:1px; top:-301px " dir="ltr" onmousedown="MousePress(event,this);">
 			<div id="imagesUnderContainer"></div>
