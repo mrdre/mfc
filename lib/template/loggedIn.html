@@ -566,9 +566,9 @@ top: -41px;
 		<input type="image" src="img/pixel.gif" class="button" id="audioButton" alt="[LANG]toggleAudio[/LANG]" title="[LANG]toggleAudio[/LANG]" onclick="ajaxChat.toggleSetting('audio', 'audioButton');"/>
 		<div id="statusIconContainer" style="display:none" class="statusContainerOn" onclick="ajaxChat.updateChat(null);"></div>
 		<div id="optionsContainer">
-			People
+			<label class="people">People</label>
 			<input type="image" src="img/pixel.gif" class="bth_peopleonline" id="onlineListButton" alt="[LANG]toggleOnlineList[/LANG]" title="[LANG]toggleOnlineList[/LANG]" onclick="bth_change(this, 'bth_peopleonline', 'bth_peopleonline_a');toggleContainer('onlineListContainer', new Array('settingsContainer','helpContainer'));"/>
-			Options
+			<label class="option">Options</label>
 			<input type="image" src="img/pixel.gif" class="button" id="settingsButton" alt="[LANG]toggleSettings[/LANG]" title="[LANG]toggleSettings[/LANG]" onclick="toggleContainer('settingsContainer', new Array('onlineListContainer','helpContainer'));"/>
 			
 			<input type="image" src="img/pixel.gif" class="button" id="autoScrollButton" alt="[LANG]toggleAutoScroll[/LANG]" title="[LANG]toggleAutoScroll[/LANG]" onclick="ajaxChat.toggleSetting('autoScroll', 'autoScrollButton');"/>
@@ -732,7 +732,7 @@ top: -41px;
 		
 		
 		<div id="onlineListContainer">
-			<h3>FRIENDS</h3>
+			<label class="friends">FRIENDS</label>
 			<div id="pv_msg_spoiler_div" class="spoiler" style="display:none;">
 				<span class="onner" id="p_messg_spoiler" onclick="showSpoiler(this);ajaxChat.parse_in_private_msg();">Private messages 2</span>
 				<div class="inner" id="p_user_list" style="display:none;">

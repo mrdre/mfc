@@ -1329,25 +1329,33 @@ border: none;
 	text-align: center;
 	font-weight: bold;
 	box-shadow: -3px -2px 3px black;
+	padding-left: 9px;
+padding-right: 9px;
+font-size: 20px;
+font-family: Myramid Pro;
 }
 
 #content #imagesContainer label.text_Images {
 	background: #ded7cd;
-	color: #76635c;
-	position: relative;
-	top: -240px;
-	left: 23px;
-	width: 79px;
-	height: 20px;
-	text-align: center;
-	font-weight: bold;
-	box-shadow: -3px -2px 3px black;
+color: #76635c;
+position: relative;
+top: -240px;
+left: 23px;
+width: 79px;
+height: 20px;
+text-align: center;
+font-weight: bold;
+box-shadow: -3px -2px 3px black;
+padding-left: 9px;
+padding-right: 9px;
+font-size: 20px;
+font-family: Myriad Pro;
 }
 
 #content #emoticonsContainer .bth_close_emoticons {
 	position: relative;
 	top: -242px;
-	left: 533px;
+	left: 506px;
 	width: 17px;
 	height: 17px;
 	background: url('../img/bth_close_emoticons.png') no-repeat;
@@ -1357,7 +1365,7 @@ border: none;
 #content #imagesContainer .bth_close_images {
 	position: relative;
 	top: -242px;
-	left: 517px;
+	left: 494px;
 	width: 17px;
 	height: 17px;
 	background: url('../img/bth_close_emoticons.png') no-repeat;
@@ -1366,13 +1374,13 @@ border: none;
 
 
 #content #emoticonsContainer img.polosa-emoticons {
-	position: relative;
-	top: 19px;
-	left: -35px;
-	width: 520px;
-	height: 23px;
-	background: url('../img/polosa-emoticons.jpg') no-repeat;
-	border: none;
+position: relative;
+top: -6px;
+left: 29px;
+width: 520px;
+height: 23px;
+background: url('../img/polosa-emoticons.jpg') no-repeat;
+border: none;
 }
 
 #content #imagesContainer img.polosa-emoticons {
@@ -1387,7 +1395,7 @@ border: none;
 
 #content #emoticonsContainer .bth_More_emoticons {
 	position: relative;
-	top: 20px;
+	top: -6px;
 	left: 20px;
 	width: 186px;
 	height: 29px;
@@ -1416,7 +1424,7 @@ border: none;
 
 #content #emoticonsContainer .bth_Submitted_emoticon {
 	position: relative;
-	top: 20px;
+	top: -6px;
 	left: 20px;
 	background: url('../img/bth_user-submitted-off.png') no-repeat;
 	width: 187px;
@@ -1445,7 +1453,7 @@ border: none;
 
 #content #emoticonsContainer .bth_Emoticon_Lookup {
 	position: relative;
-	top: 20px;
+	top: -6px;
 	left: 20px;
 	background: url('../img/bth_emoticon-lookup-off.png') no-repeat;
 	width: 187px;
