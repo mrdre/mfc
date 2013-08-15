@@ -3664,7 +3664,7 @@ $this->logout();
 
 			return '<ul id="tabs" class="css_tabs">
 						<li><a href="#tab2">Home</a></li>
-						<li><a href="#tab1">ChatRoom</a></li>
+						<li><a href="#tab1">Chat room</a></li>
 						</ul>
 					<ul id="tabcontent" class="css_tabcontent">
 					<li id="tab1">
@@ -3673,25 +3673,16 @@ $this->logout();
 						<input type="button" name="settopit" class="bth_settopic" value=" "/>
 					</div>
 					<div class="mute_basic_guest">
-						<img src="../chat/img/bth_admine_mute.png" width="16" />Mute Basics
+						<img src="../chat/img/bth_admine_mute.png" style="width:16px; margin-right: 4px" />Mute Basics
 						<br/>
-						<img src="../chat/img/bth_admine_mute_guest.png" width="16" />Mute Guests
+						<img src="../chat/img/bth_admine_mute_guest.png" style="width:16px; margin-right: 4px" />Mute Guests
 					</div>
 					<div class="users_watching">
-						<img src="../chat/img/icon_admine_group.png" width="24" />Users watching you
+						<img src="../chat/img/icon_admine_group.png" style="width:24px; margin-right: 4px;" />Users watching you
 						<img src="../chat/img/tips_arrow_up.png" width="8" />
 						<br/>
-						<a href="#"><img src="../chat/img/icon_1.png" width="14" />Instructions for Model Web Broadcaster</a><br/>
-						<a href="#"><img src="../chat/img/icon_2.png" width="14" />My Account</a><br/>
-						<a href="#"><img src="../chat/img/icon_3.png" width="14" />My Profile</a><br/>
-						<a href="#"><img src="../chat/img/icon_4.png" width="14" />Token Stats</a><br/>
-						<a href="#"><img src="../chat/img/icon_5.png" width="14" />MFC Mail</a><br/>
-						<a href="#"><img src="../chat/img/icon_6.png" width="14" />Rules and Instructions</a><br/>
-						<a href="#"><img src="../chat/img/icon_7.png" width="14" />Technical Support</a><br/>
 						
 					</div>
-					
-					
 					';
 		} else
 		{
@@ -3733,11 +3724,11 @@ $this->logout();
 			<br/>
 			<table class="tbl_admine">
 			<td class="tbl_left">
-			<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_friends.png" width="25"/>FRIENDS</span>
+			<span id="a_friends_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_friends.png" style="width: 25px; margin-right: 4px;"/>FRIENDS</span>
 				<div class="inner" id="m_friend_list" style="display:none;">
 						<tr><td>
 						
-						<span id="a_friends_onl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" width="16%"/>online friends</span>
+						<span id="a_friends_onl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" style="width: 16%; margin-right: 4px;"/>online friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
 							<tr><td>User 1</td></tr>
 							<tr><td>User 2</td></tr>
@@ -3745,7 +3736,7 @@ $this->logout();
 						</div>
 						</td><td>(3)</td></tr>
 						<tr><td>
-						<span id="a_friends_offl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" width="16%"/>offline friends</span>
+						<span id="a_friends_offl_spoiler" class="onner2" onclick="showSpoiler(this);"><img src="../chat/img/icon_folder.png" style="width: 16%; margin-right: 4px;"/>offline friends</span>
 						<div class="inner" id="m_friend_list" style="display:none;">
 							<tr><td>User 1</td></tr>
 							<tr><td>User 2</td></tr>
@@ -3755,19 +3746,19 @@ $this->logout();
 				</div>
 </td>
 <td class="tbl_right">
-	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_tokens.png" width="25"/>TOKENS</span>
+	<span id="a_menu_spoiler" class="onner1" onclick="showSpoiler(this);"><img src="../chat/img/icon_tokens.png" style="width: 12%; margin-right: 4px;"/>TOKENS</span>
 		<input class="bth_admine_refresh" type="button" value="" onclick="ajaxChat.showHide(\'refresh_stats_Container\', null);"/>
 		<input class="bth_admine_find" type="button" value="" onclick="ajaxChat.showHide(\'statistic_stats_Container\', null);"/>
 		<input class="bth_admine_list" type="button" value="" onclick="ajaxChat.showHide(\'chart_stats_Container\', null);"/>
 				<div class="inner" id="m_menu_list" style="display:none;">
 						<tr><td>
 						<table>
-						<tr><td><img src="../chat/img/icon_admine_private.png" width="8%"/>Private .... </td><td>0</td></tr>
-						<tr><td><img src="../chat/img/icon_admine_group.png" width="8%"/>Group ..... </td><td>0</td></tr>
-						<tr><td><img src="../chat/img/icon_admine_spy.png" width="8%"/>Spy ..... </td><td>0</td></tr>
-						<tr><td><img src="../chat/img/icon_admine_tips.png" width="8%"/>Tips ....... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_private.png" style="width: 12%; margin-right: 4px;"/>Private .... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_group.png" style="width: 12%; margin-right: 4px;"/>Group ..... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_spy.png" style="width: 12%; margin-right: 4px;"/>Spy ..... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_tips.png" style="width: 12%; margin-right: 4px;"/>Tips ....... </td><td>0</td></tr>
 						<hr/>
-						<tr><td><img src="../chat/img/icon_admine_total.png" width="8%"/>Total ....... </td><td>0</td></tr>
+						<tr><td><img src="../chat/img/icon_admine_total.png" style="width: 12%; margin-right: 4px;"/>Total ....... </td><td>0</td></tr>
 						</table>
 						</td></tr>
 				</div>

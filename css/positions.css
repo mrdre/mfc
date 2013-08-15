@@ -71,7 +71,7 @@
     height: 29px;
     position: relative;
     left: 5px;
-    top: 0px; 
+    top: 4px; 
 }
 
 #content  .bthbuytokens:hover
@@ -91,7 +91,8 @@
     left: 5px;
     top: 0px; 
 	font-size: 12px;
-	color: brown;
+	color: #766655;
+	font-family: Myriad Pro;
 }
 
 
@@ -247,6 +248,7 @@ color: #817569;
 font-weight: bold;
 background: #dfd8ce;
 padding: 0px 26px;
+font-family: Myriad Pro;
 }
 
 #content ul.css_tabcontent .tab_home {
@@ -297,21 +299,17 @@ height: 25px;
 padding: 4px 31px;
 color: #867362;
 font-weight: bold;
-/*
-background: #E6D7C2;
-border: 2px solid #a39685;
-padding: 0px 27px;
-border-radius: 5px;
-*/
+font-family: Segoe UI;
 }
 
 #content td.tbl_right span.onner1 {
 background: url('../img/stripe.png');
 width: 150px;
 height: 25px;
-padding: 4px 53px 4px 2px;
+padding: 4px 71px 4px 2px;
 color: #867362;
 font-weight: bold;
+font-family: Segoe UI;
 }
 
 #content td.tbl_right .bth_admine_refresh {
@@ -351,6 +349,8 @@ top: -15px;
 #content td.tbl_left span.onner2 {
 color: #4c453d;
 font-weight: bold;
+font-family: Myriad Pro;
+font-size: 15px;
 }
 #content td.tbl_left .inner td, #content td.tbl_right .inner td {
 color: #7d715b;
@@ -359,6 +359,8 @@ font-weight: bold;
 
 #content td.tbl_left .inner, #content td.tbl_right .inner  {
 margin-top: 10px;
+font-family: Myriad Pro;
+font-size: 15px;
 }
 
 #content .topic {
@@ -379,6 +381,7 @@ background: url('../img/stripe_menu.jpg');
 	border: none;
 	resize: none;
 	left: 6px;
+	font-family: Myriad Pro;
 }
 
 #content .topic input.bth_settopic {
@@ -399,9 +402,10 @@ border: none;
 	z-index: 1;
 	width: 137px;
 	height: 36px;
-	color: #867362;
+	color: #5f4419;
 	font-size: 12px;
 	font-weight: bold;
+	font-family: Arial;
 }
 
 #content .users_watching {
@@ -411,19 +415,11 @@ border: none;
 	z-index: 1;
 	width: 177px;
 	height: 100px;
-		color: #4c453d;
-	font-size: 12px;
+	color: #5f4419;
+	font-size: 14px;
 	font-weight: bold;
+	font-family: Arial;
 }
-
-#content .users_watching  a {
-	color: #4c453d;
-	font-size: 12px;
-	font-weight: bold;
-}
-
-
-
 
 
 .stripe_broadcasting
@@ -475,8 +471,8 @@ border: none;
 #content #onlineListContainer {
 	position:absolute;
 	right:20px;
-	//top: 124px;
-	top: 164px;
+	top: 194px;
+	//top: 164px;
 	width:200px;
 	bottom:150px;
 }
@@ -749,14 +745,14 @@ padding: 10px 1px 2px 6px;
 	top: 93px;
 	right: 245px;
 	width: 58px;
-	height: 22px;
+	height: 20px;
 	background:url('../img/audio_off.jpg') no-repeat;
 }
 
 #audioButton.off {
 	background:url('../img/audio_on.jpg') no-repeat;
 	width: 58px;
-	height: 22px;
+	height: 20px;
 	top: 93px;
 }
 
@@ -884,6 +880,8 @@ body
 	position: relative;
 	top: 7px;
 	left: 10px;
+	font-family: Arial;
+	font-size: 12px;
 }
 
 #content #refresh_stats_Container .text_reset {
@@ -893,6 +891,8 @@ body
 	left: 10px;
 	width: 458px;
 	color: #867362;
+	font-family: Segoe UI;
+	font-size: 13px;
 }
 
 #content #refresh_stats_Container  .bth_refresh_yes {
@@ -940,6 +940,10 @@ body
 	text-align: center;
 	font-weight: bold;
 	box-shadow: -3px -2px 3px black;
+	font-family: Georgia;
+	font-size: 20px;
+	padding-left: 9px;
+	padding-right: 9px;
 }
 
 #content #statistic_stats_Container  .text_history_chart {
@@ -953,34 +957,36 @@ body
 
 #content #statistic_stats_Container .bth_close_statistic {
 	position: relative;
-	top: -21px;
-	left: 557px;
-	width: 17px;
-	height: 17px;
-	background: url('../img/bth_close_emoticons.png') no-repeat;
-	border: none;
+top: -24px;
+left: 507px;
+width: 17px;
+height: 17px;
+background: url('../img/bth_close_emoticons.png') no-repeat;
+border: none;
 }
 
 #content #statistic_stats_Container  .text_history_text1 {
 	color: #76635c;
 	position: relative;
-	top: 0px;
+	top: -8px;
 	left: 23px;
 	width: 212px;
 	height: 20px;
 	font-weight: bold;
 	font-size: 12px;
+	font-family: Segoe UI;
 }
 
 #content #statistic_stats_Container  .text_history_text2 {
 	color: #76635c;
 	position: relative;
-	top: -20px;
+	top: -28px;
 	left: 459px;
 	width: 212px;
 	height: 20px;
 	font-weight: bold;
 	font-size: 12px;
+	font-family: Segoe UI;
 }
 
 #content #statistic_stats_Container  .text_history_legend {
@@ -1039,6 +1045,7 @@ body
 	color: #76635c;
 	font-weight: bold;
 	font-size: 12px;
+	font-family: Segoe UI;
 }
 
 #content #statistic_stats_Container  .text_history_niz   .history_field  {
@@ -1061,6 +1068,7 @@ body
 	color: #76635c;
 	font-weight: bold;
 	font-size: 12px;
+	font-family: Segoe UI;
 }
 
 #content #statistic_stats_Container  .text_history_niz  .text_history_line2 {
@@ -1110,6 +1118,7 @@ body
 	color: #76635c;
 	font-weight: bold;
 	font-size: 12px;
+	font-family: Segoe UI;
 }
 
 
@@ -1128,25 +1137,29 @@ body
 
 #content #chart_stats_Container  .text_tips {
 	background: #ded7cd;
-	color: #76635c;
-	position: relative;
-	top: -20px;
-	left: 23px;
-	width: 79px;
-	height: 20px;
-	text-align: center;
-	font-weight: bold;
-	box-shadow: -3px -2px 3px black;
+color: #76635c;
+position: relative;
+top: -21px;
+left: 23px;
+width: 79px;
+height: 20px;
+text-align: center;
+font-weight: bold;
+box-shadow: -3px -2px 3px black;
+font-family: Georgia;
+padding-left: 9px;
+padding-right: 9px;
+font-size: 20px;
 }
 
 #content #chart_stats_Container .bth_close_tips {
-	position: relative;
-	top: -21px;
-	left: 555px;
-	width: 17px;
-	height: 17px;
-	background: url('../img/bth_close_emoticons.png') no-repeat;
-	border: none;
+position: relative;
+top: -24px;
+left: 514px;
+width: 17px;
+height: 17px;
+background: url('../img/bth_close_emoticons.png') no-repeat;
+border: none;
 }
 
 #content #chart_stats_Container .text_tips_menu {
@@ -1154,7 +1167,7 @@ body
 	top: -22px;
 	left: -3px;
 	width: 700px;
-	height: 54px;
+	height: 46px;
 	background: url('../img/tips_menu.png') no-repeat;
 	border: none;
 }
@@ -1175,6 +1188,7 @@ body
 	left: 40px;
 	color: #76635c;
 	font-size: 13px;
+	font-family: Segoe UI;
 }
 
 #content #chart_stats_Container .text_tips_menu  .bth_tips_arrow_up {
@@ -1204,6 +1218,7 @@ body
 	left: 145px;
 	color: #76635c;
 	font-size: 13px;
+	font-family: Segoe UI;
 }
 
 #content #chart_stats_Container .text_tips_menu  .text_tips_amount {
@@ -1221,6 +1236,7 @@ body
 	left: 240px;
 	color: #76635c;
 	font-size: 13px;
+	font-family: Segoe UI;
 }
 
 #content #chart_stats_Container .text_tips_menu  .text_tips_note {
@@ -1238,6 +1254,7 @@ body
 	left: 340px;
 	color: #76635c;
 	font-size: 13px;
+	font-family: Segoe UI;
 }
 
 #content #chart_stats_Container .text_tips_lab5 {
@@ -1246,6 +1263,7 @@ body
 	left: 211px;
 	color: #76635c;
 	font-size: 13px;
+	font-family: Segoe UI;
 }
 
 
