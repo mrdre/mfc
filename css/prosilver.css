@@ -85,6 +85,8 @@
 	}
 	#content #optionsContainer #settingsButton {
 	    background:url('../img/settings.png') no-repeat;
+		top: 4px;
+		position: relative;
 	}
 	#content #optionsContainer #onlineListButton {
 	    //background:url('../img/users.png') no-repeat;
@@ -147,8 +149,6 @@
 		border-color:red;
 	}
 	#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
-		//background-color:#E1EBF2;
-		color:#105289;
 	}
 	#content #settingsContainer #settingsList input.playback {
 	    background:url('../img/playback.png') no-repeat;

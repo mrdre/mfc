@@ -71,10 +71,10 @@
 }
 #content #chatList span.chatBot {
 	font-weight:bold;
-	font-style:italic;
+	//font-style:italic;
 }
 #content #chatList .chatBotMessage {
-	font-style:italic;
+	//font-style:italic;
 }
 #content #chatList .chatBotErrorMessage {
 	font-style:italic;

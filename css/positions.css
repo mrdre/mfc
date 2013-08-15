@@ -126,6 +126,7 @@
 	font-size: 34px;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px grey;
+	font-family: Myriad Pro;
 }
 
 #content  .logolabel .status
@@ -133,6 +134,7 @@
 	color: #646c54;
 	font-size: 24px;
 	font-weight: bold;
+	font-family: Myriad Pro;
 }
 
 
@@ -216,7 +218,8 @@
 	top:116px;
 	bottom:150px;
 	overflow:auto;
-
+	font-family: Myriad Pro;
+	font-size: 16px;
 }
 
 #content ul.css_tabcontent  #chatList {
@@ -1503,6 +1506,29 @@ right: 20px;
 padding: 3px;
 padding-right: 0px;
 }
+
+#content #optionsContainer label.people {
+	color: #8e764f;
+	font-size: 13px;
+	font-family: Myriad Pro;
+}
+
+#content #optionsContainer label.option {
+	color: #8e764f;
+	font-size: 13px;
+	font-family: Myriad Pro;
+	font-weight: bold;
+}
+
+#content #onlineListContainer label.friends {
+	color: #5f4419;
+	font-size: 14px;
+	font-family: Myriad Pro;
+	font-weight: bold;
+}
+
+
+
 #content #bbCodeContainer input {
 	padding-left:4px;
 	padding-right:4px;
@@ -1565,6 +1591,9 @@ padding-right: 0px;
 	background: url('../img/messag-pole.jpg');
 	border: none;
 	padding: 5px 205px 2px 8px;
+	font-family: Myriad Pro;
+	font-size: 16px;
+	color: black;
 }
 #content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
 	height: 30px;
@@ -1589,6 +1618,13 @@ padding-right: 0px;
 	top:25px;
 	bottom:0px;
 	overflow:auto;
+}
+
+#onlineList a {
+	font-family: Arial;
+	font-size: 14px;
+	color: black;
+
 }
 
 #onlineList  img {
